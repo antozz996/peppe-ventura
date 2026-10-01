@@ -1,4 +1,4 @@
-import {contactRequestTypes} from '@/content/contact';
+import {contact,contactRequestTypes} from '@/content/contact';
 import {contactConfiguration} from '@/lib/contact-config';
 
 const reply=(body:object,status:number)=>Response.json(body,{status,headers:{'Cache-Control':'no-store'}});
@@ -27,5 +27,5 @@ export async function POST(request:Request){
   const response=await fetch(config.destination,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${config.token}`},body:JSON.stringify({name,email,type,message}),signal:AbortSignal.timeout(10000),redirect:'error'});
   if(!response.ok)throw new Error('Delivery rejected');
   return reply({message:'Messaggio inviato. Grazie per avermi scritto.'},200);
- }catch{return reply({message:'Il messaggio non è stato inviato. Riprova più tardi o contattami su Instagram.'},502);}
+ }catch{return reply({message:`Il messaggio non è stato inviato. Riprova più tardi o scrivimi a ${contact.email}.`},502);}
 }

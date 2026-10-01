@@ -1,4 +1,5 @@
 import {site,socials} from './site';
+import {contact} from './contact';
 
 export type PressCategory='Portrait'|'Teatro'|'Eventi'|'Scrittura'|'Backstage';
 export type PressPhoto={id:string;title:string;alt:string;category:PressCategory;preview:string;srcSet:string;original:string|null;width:number;height:number;orientation:'Verticale'|'Orizzontale';photographer:string|null;usageNotes:string;downloadLabel:string;downloadName:string};
@@ -29,6 +30,6 @@ export const pressData={
  pressCoverage:[{"publication": "ANSA", "title": "Premio San Gennaro world 2025, omaggio a Claudio Mattone", "date": "2025-09-26", "href": "https://www.ansa.it/amp/campania/notizie/2025/09/26/premio-san-gennaro-world-2025-omaggio-a-claudio-mattone_eca68cd7-1ddf-42af-918b-7cab2189aa5b.html"},{"publication": "Napoli Magazine", "title": "SPETTACOLI - \"Click 2.0\", con Emanuel Ceruti, Paco De Rosa e Peppe Ventura, al Teatro Cilea", "date": "2025-01-21", "href": "https://www.napolimagazine.com/cultura-gossip/articolo/spettacoli-click-2-0-con-emanuel-ceruti-paco-de-rosa-e-peppe-ventura-al-teatro-cilea-21-01-2025"},{publication:'Metropolis',title:'Dal web alla stampa: Peppe Ventura racconta il suo libro «L’hai scelto tu»',date:'2025-08-05',href:'https://www.metropolisweb.it/2025/08/05/dal-web-alla-stampa-peppe-ventura-racconta-suo-libro-lhai-scelto-tu/'}],
  sources:[{title:'COMICON · Scheda autore',href:'https://napoli.comicon.it/ospiti/806/rai.it'},{title:'Rogiosi · Caro prof ti scrivo…',href:'https://rogiosi.it/product/caro-prof-ti-scrivo/'},{title:'Teatro Cilea · Click 2.0',href:'https://teatrocilea.it/spettacoli/click-2-0/'},{title:'TicketOne · Chiamami Papà',href:'https://www.ticketone.it/event/peppe-ventura-chiamami-papa-teatro-acacia-22006897/'}],
  logos:[],awards:[{year:2025,title:'Premio San Gennaro World',description:'Riconoscimento consegnato a Peppe Ventura da Gianni Simioli.',href:'https://www.ansa.it/amp/campania/notizie/2025/09/26/premio-san-gennaro-world-2025-omaggio-a-claudio-mattone_eca68cd7-1ddf-42af-918b-7cab2189aa5b.html'}],downloads:[] as {title:string;href:string}[],
- contacts:{pressEmail:null as string|null,management:null as string|null},
+ contacts:{pressEmail:contact.email,management:null as string|null},
  facts:{name:site.name,profession:site.descriptor,website:site.origin,socials},
 };

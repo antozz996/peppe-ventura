@@ -46,7 +46,7 @@ Non è implementato un archivio pubblico `/appunti/` con articoli reali. Il file
 
 I dati modificabili sono in `content/`. Le bio Press sono **bozze da approvare**, marcate come tali anche nei TXT scaricabili. La ricerca e le fonti sono in `docs/press-research-2026-10-01.md`; le istruzioni sono in `docs/press-content.md`.
 
-Restano da confermare email stampa/management, crediti e condizioni d’uso delle fotografie, originali HD dei due ritratti in versione web e press kit definitivo. Non vengono generati download fittizi.
+La mail ufficiale confermata è info@peppeventura.it, pubblicata in Contatti e Press. Restano da confermare il riferimento management, crediti e condizioni d’uso delle fotografie, originali HD dei due ritratti in versione web e press kit definitivo. Non vengono generati download fittizi.
 
 ## Stato del trasferimento
 

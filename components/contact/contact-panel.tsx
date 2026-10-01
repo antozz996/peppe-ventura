@@ -28,14 +28,14 @@ export function ContactPanel({enabled,privacy}:{enabled:boolean;privacy:string|n
   setErrors(next);setFeedback('');
   const first=Object.keys(next)[0] as Field|undefined;
   if(first){form.querySelector<HTMLElement>(`#contact-${first}`)?.focus();return;}
-  if(!enabled){setStatus('error');setFeedback('Il form non è ancora attivo. Nessun messaggio è stato inviato. Per ora puoi contattarmi su Instagram.');return;}
+  if(!enabled){setStatus('error');setFeedback(`Il form non è ancora attivo. Nessun messaggio è stato inviato. Per ora puoi scrivermi a ${contact.email}.`);return;}
   setStatus('loading');track('contact_form_submit');
   try{
    const response=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,type:requestType,message,website:data.get('website'),startedAt:started.current}),signal:AbortSignal.timeout(15000)});
    const result=await response.json() as {message?:string};
    if(!response.ok)throw new Error(result.message);
    setStatus('success');setFeedback('Messaggio inviato. Grazie per avermi scritto.');track('contact_form_success');form.reset();setRequestType('');started.current=null;
-  }catch(error){setStatus('error');setFeedback(error instanceof Error&&error.name!=='TimeoutError'&&error.name!=='AbortError'&&error.message!=='Failed to fetch'?error.message:'Il messaggio non è stato inviato. Riprova più tardi o contattami su Instagram.');track('contact_form_error');}
+  }catch(error){setStatus('error');setFeedback(error instanceof Error&&error.name!=='TimeoutError'&&error.name!=='AbortError'&&error.message!=='Failed to fetch'?error.message:`Il messaggio non è stato inviato. Riprova più tardi o scrivimi a ${contact.email}.`);track('contact_form_error');}
  }
  const fieldError=(field:Field)=>errors[field]?<span className="contact-field-error" id={`error-${field}`}>{errors[field]}</span>:null;
  return <>

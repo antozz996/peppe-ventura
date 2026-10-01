@@ -4,7 +4,7 @@ export const contact={
  description:'Contatta Peppe Ventura per spettacoli, eventi, collaborazioni, stampa, conduzioni e richieste professionali.',
  hero:'/images/contact/hero-770.webp',
  heroAlt:'Peppe Ventura in abito scuro, con un microfono in mano durante un evento dal vivo',
- email:null as string|null, // Awaiting confirmation: never publish the mockup address.
+ email:'info@peppeventura.it', // Official contact address confirmed by the user.
  instagram:'https://www.instagram.com/peppeventura/',
  instagramHandle:'@peppeventura',
 };

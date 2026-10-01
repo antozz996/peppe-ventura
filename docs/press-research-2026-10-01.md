@@ -56,7 +56,9 @@ Si rimanda alle pagine originali senza riprodurre gli articoli o i loghi delle t
 
 ## Materiali ancora da ricevere
 
-**Necessari per un kit ufficiale completo:** approvazione delle tre bio; email stampa e management; nomi dei fotografi e condizioni d’uso; originali ad alta risoluzione dei due ritratti presenti solo in versione web; eventuale logo ufficiale e press kit approvato. I recapiti di editori, teatri e biglietterie non sono recapiti personali di Peppe.
+**Necessari per un kit ufficiale completo:** approvazione delle tre bio; riferimento management; nomi dei fotografi e condizioni d’uso; originali ad alta risoluzione dei due ritratti presenti solo in versione web; eventuale logo ufficiale e press kit approvato. I recapiti di editori, teatri e biglietterie non sono recapiti personali di Peppe.
+
+Aggiornamento del 1 ottobre 2026: l’utente ha confermato **info@peppeventura.it** come mail ufficiale. È stata pubblicata nelle pagine Contatti e Press.
 
 Non sono emersi dati sufficienti per pubblicare una cronologia completa di premi, collaborazioni, apparizioni TV o brand partner. Le omonimie sono state escluse dalla ricerca; non sono stati usati dati di DJ, amministratori pubblici o persone con nomi simili.
 

@@ -11,7 +11,7 @@ Ogni asset contiene id, titolo, alt, categoria, preview e srcset, file da scaric
 Le categorie Eventi e Backstage sono predisposte ma non contengono immagini. I crediti sono da confermare. Non aggiungere fotografie generate o materiali riservati.
 
 ## Altri materiali
-`downloads` accetta esclusivamente file realmente presenti; il PDF resta in preparazione finché manca. Non è disponibile un logo ufficiale. È documentato il Premio San Gennaro World 2025, con collegamento alla fonte ANSA e senza una motivazione inventata. `contacts.pressEmail` e `contacts.management` devono essere compilati solo con riferimenti confermati. La CTA generale conduce alla pagina Contatti esistente.
+`downloads` accetta esclusivamente file realmente presenti; il PDF resta in preparazione finché manca. Non è disponibile un logo ufficiale. È documentato il Premio San Gennaro World 2025, con collegamento alla fonte ANSA e senza una motivazione inventata. La mail ufficiale confermata dall’utente è `info@peppeventura.it`, condivisa tra Contatti e Press attraverso `content/contact.ts`. Il riferimento management resta da confermare. La CTA generale conduce alla pagina Contatti esistente.
 
 ## Fonti e link
 La rassegna contiene Metropolis (5 agosto 2025), ANSA (26 settembre 2025) e Napoli Magazine (21 gennaio 2025). Le fonti delle bio comprendono COMICON, Rogiosi, Teatro Cilea e TicketOne. Il dossier dettagliato è in `docs/press-research-2026-10-01.md`. Per Caro prof ti scrivo… si conserva il 2018 dell’editore, anziché il 2019 della scheda COMICON. Aggiungere solo articoli esistenti con titolo, data, testata e URL reali. I progetti linkano allo spettacolo e al libro reali già presenti, oltre alla pagina Video.
