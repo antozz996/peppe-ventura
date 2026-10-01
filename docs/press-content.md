@@ -17,7 +17,7 @@ Le categorie Eventi e Backstage sono predisposte ma non contengono immagini. I c
 La rassegna contiene Metropolis (5 agosto 2025), ANSA (26 settembre 2025) e Napoli Magazine (21 gennaio 2025). Le fonti delle bio comprendono COMICON, Rogiosi, Teatro Cilea e TicketOne. Il dossier dettagliato è in `docs/press-research-2026-10-01.md`. Per Caro prof ti scrivo… si conserva il 2018 dell’editore, anziché il 2019 della scheda COMICON. Aggiungere solo articoli esistenti con titolo, data, testata e URL reali. I progetti linkano allo spettacolo e al libro reali già presenti, oltre alla pagina Video.
 
 ## SEO e navigazione
-Canonical, Open Graph, Twitter, Person, WebPage e BreadcrumbList sono implementati. L’indicizzazione segue `site.production`; l’anteprima rimane noindex. La pagina è nella sitemap. Non viene aggiunta una voce al menu o alle pagine approvate: accesso diretto `/press/`.
+Canonical, Open Graph, Twitter, Person, WebPage e BreadcrumbList sono implementati. L’indicizzazione segue `site.production`; l’anteprima rimane noindex. La pagina è nella sitemap. Il footer condiviso contiene il link “Press e Media kit” su tutte le pagine, oltre agli ingressi delle sezioni principali. Accesso diretto `/press/`. L’header conserva il layout approvato.
 
 ## Analytics
 Eventi predisposti via CustomEvent `peppe:analytics`, senza script esterni: press_bio_copy, press_photo_download, press_kit_download, press_article_click, press_project_click, press_contact_click. I download sono link nativi senza caricamento preventivo degli originali.

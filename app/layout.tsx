@@ -1,6 +1,8 @@
 import type {Metadata} from 'next';
 import {site} from '@/content/site';
+import {SiteFooter} from '@/components/site-footer';
 import './globals.css';
+import './site-footer.css';
 export const metadata:Metadata={
  metadataBase:new URL(site.origin),
  title:'Peppe Ventura | Autore, Attore e Presentatore',description:site.description,
@@ -9,4 +11,4 @@ export const metadata:Metadata={
  twitter:{card:'summary_large_image',title:'Peppe Ventura | Autore, Attore e Presentatore',description:site.description,images:['/images/peppe-social.jpg']},
  icons:{icon:'/favicon.svg',shortcut:'/favicon.svg'},
 };
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="it"><body>{children}</body></html>}
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="it"><body>{children}<SiteFooter/></body></html>}
