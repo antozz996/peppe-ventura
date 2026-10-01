@@ -1,0 +1,62 @@
+.writing-page{background:radial-gradient(ellipse at 70% 22%,#37211666,transparent 56%),#0b0707;min-height:100svh;overflow:hidden}
+.writing-hero{position:relative;isolation:isolate;min-height:375px;padding-top:25px}
+.writing-portrait{position:absolute;z-index:0;right:-30px;top:-25px;width:59%;height:550px;pointer-events:none;background:#dfe0cf}
+.writing-portrait img{width:100%;height:100%;object-fit:contain;object-position:center top}
+.writing-portrait:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#0b0707,transparent 38%,transparent 65%,#0b0707),linear-gradient(0deg,#0b0707 8%,transparent 30%,transparent 80%,#0b0707 100%)}
+.writing-intro{position:relative;z-index:2;max-width:520px;padding:0 10px}
+.writing-breadcrumb{font-size:12px;color:#cec3b6;margin-bottom:12px}
+.writing-breadcrumb a{display:inline-flex;align-items:center;min-height:24px}
+.writing-breadcrumb a:hover{text-decoration:underline}
+.writing-hero h1{font-family:var(--serif);font-size:104px;font-weight:700;line-height:1;letter-spacing:-.045em;margin:0 0 3px}
+.writing-subtitle{font-size:31px;line-height:1.16;white-space:pre-line;margin:0 0 20px;letter-spacing:-.015em}
+.writing-description{font-size:17px;line-height:1.35;max-width:410px;margin:0}
+.writing-feature-grid{position:relative;z-index:3;display:grid;grid-template-columns:minmax(0,3.85fr) minmax(0,1fr);gap:18px}
+.writing-feature,.writing-project,.writing-note{border:1px solid #682b2b;border-radius:7px;overflow:hidden;background:#080605ed}
+.writing-feature{display:grid;grid-template-columns:43% 57%;min-height:295px;scroll-margin-top:20px}
+.writing-book-image{display:flex;align-items:center;justify-content:center;padding:18px 25px;background:linear-gradient(90deg,#21120a30,#110b0960),url('/images/writing/desk.webp') center/cover}
+.writing-book-image img{width:auto;height:267px;max-width:100%;object-fit:contain;box-shadow:4px 5px 13px #0009}
+.writing-book-copy{padding:22px 25px}
+.writing-eyebrow{color:#ff6b77;text-transform:uppercase;font-size:12px;margin:0 0 7px;letter-spacing:.025em}
+.writing-book-copy h2{font-family:var(--serif);font-size:40px;font-weight:700;letter-spacing:-.035em;line-height:1.07;margin:0 0 5px}
+.writing-book-subtitle{font-size:19px;line-height:1.3;margin:0 0 15px}
+.writing-book-description{font-size:15px;line-height:1.35;margin:0 0 18px;color:#e5ded5}
+.writing-actions{display:flex;gap:12px}
+.writing-actions .button{min-height:49px;padding:12px 17px;font-size:14px;gap:9px}
+.writing-actions .button svg{width:21px;height:21px}
+.writing-project>a{display:flex;flex-direction:column;height:100%;position:relative;padding:28px 18px 110px}
+.writing-project-top{display:flex;gap:10px;align-items:center;justify-content:space-between;margin-bottom:20px}
+.writing-project h2{font-family:var(--serif);font-size:24px;font-weight:700;line-height:1.08;letter-spacing:-.03em;margin:0}
+.writing-project h3{font-family:var(--serif);font-size:19px;font-weight:700;line-height:1.2;margin:0 0 8px}
+.writing-project p{font-size:14px;line-height:1.3;margin:0;color:#e5ded5}
+.writing-project img{position:absolute;left:0;right:0;bottom:0;height:105px;width:100%;object-fit:cover;opacity:.8}
+.writing-arrow{display:flex;align-items:center;justify-content:center;border:1px solid #d94550;color:#ff6270;border-radius:50%;width:35px;height:35px;flex-shrink:0}
+.writing-arrow svg{width:23px;height:23px;transition:transform .2s}
+.writing-project:hover,.writing-note:hover{border-color:#dd4253}
+.writing-project:hover .writing-arrow svg,.writing-note:hover .writing-arrow svg{transform:translateX(2px)}
+.writing-notes{margin-top:14px}
+.writing-section-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:12px}
+.writing-section-heading h2,.writing-quotation h2{font-family:var(--serif);font-size:35px;font-weight:700;letter-spacing:-.035em;line-height:1.15;margin:0}
+.writing-section-heading>a{font-size:13px;display:flex;gap:8px;align-items:center;min-height:44px;color:#ff6b77}
+.writing-section-heading>a:hover{text-decoration:underline}
+.writing-notes-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.writing-note>a{display:block;height:100%}
+.writing-note-image{height:120px;overflow:hidden}
+.writing-note-image img{width:100%;height:100%;object-fit:cover;transition:transform .2s}
+.writing-note:hover .writing-note-image img{transform:scale(1.025)}
+.writing-note-copy{position:relative;padding:12px 13px 16px}
+.writing-note-category{font-size:11px;color:#ff7b85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.02em}
+.writing-note-category span{color:#d2c1b1}
+.writing-note h3{font-family:var(--serif);font-size:21px;font-weight:700;line-height:1.15;margin:0 0 7px}
+.writing-note-excerpt{font-size:14px;line-height:1.3;color:#e0d5ca;margin:0 0 13px}
+.writing-note-date{font-size:12px;color:#c6bcb2;margin:0;min-height:25px;display:flex;align-items:end;padding-right:40px}
+.writing-note .writing-arrow{position:absolute;bottom:13px;right:13px}
+.writing-quotation{position:relative;display:flex;align-items:center;justify-content:space-between;gap:25px;min-height:220px;margin:18px -30px -28px;padding:25px 85px 28px;border-top:1px solid #51312b;background:linear-gradient(90deg,#090604f5,#090604c7 40%,#10090526),url('/images/writing/notebook.webp') center/cover}
+.writing-quotation figure{margin:12px 0 0;max-width:650px}
+.writing-quotation blockquote{margin:0;font-family:var(--serif);font-size:29px;font-style:italic;line-height:1.2}
+.writing-quotation blockquote p{margin:0}
+.writing-quotation figcaption{font-size:12px;line-height:1.45;margin-top:12px;color:#e1d2c2}
+.writing-quotation figcaption a{text-decoration:underline;text-underline-offset:3px}
+.writing-quotation-link{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:48px;height:48px;border:1px solid #b5a68f;border-radius:50%;background:#08050260}
+@media(min-width:768px) and (max-width:1099px){.writing-intro{max-width:44%}.writing-hero h1{font-size:90px}.writing-subtitle{font-size:26px}.writing-description{font-size:15px}.writing-portrait{right:-24px;width:62%}.writing-feature-grid{grid-template-columns:minmax(0,3fr) minmax(0,1fr);gap:14px}.writing-feature{grid-template-columns:37% 63%}.writing-book-copy{padding:20px 17px}.writing-book-copy h2{font-size:33px}.writing-book-subtitle{font-size:17px}.writing-book-description{font-size:14px}.writing-book-image{padding:20px 14px}.writing-book-image img{height:255px}.writing-actions{gap:8px;flex-wrap:wrap}.writing-actions .button{padding:10px 12px;font-size:13px}.writing-project>a{padding:22px 14px 110px}.writing-project h2{font-size:22px}.writing-notes-grid{gap:14px}.writing-note h3{font-size:19px}.writing-note-category{font-size:10px}.writing-quotation{margin-left:-24px;margin-right:-24px;padding-left:55px;padding-right:55px}}
+@media(max-width:767px){.writing-hero{min-height:360px;padding-top:145px}.writing-portrait{top:0;right:-20px;width:100%;height:380px}.writing-portrait img{object-fit:contain;object-position:right top}.writing-portrait:after{background:linear-gradient(90deg,#0b0707 2%,transparent 55%,transparent 85%,#0b070750),linear-gradient(0deg,#0b0707 3%,#0b0707bc 30%,#0b070790 50%,transparent 70%,#0b0707b0)}.writing-intro{max-width:none;padding:0}.writing-breadcrumb{position:absolute;top:-124px;left:0;font-size:11px}.writing-hero h1{font-size:59px;line-height:1;letter-spacing:-.045em;text-shadow:0 2px 12px #0009;margin-bottom:3px}.writing-subtitle{font-size:22px;line-height:1.08;max-width:280px;margin-bottom:18px;text-shadow:0 1px 9px #000}.writing-description{font-size:14px;line-height:1.3;max-width:275px;margin-bottom:20px;text-shadow:0 1px 7px #000}.writing-feature-grid{display:flex;flex-direction:column;gap:14px}.writing-feature{grid-template-columns:37% 63%;min-height:235px}.writing-book-image{padding:15px 10px;align-items:center}.writing-book-image img{height:auto;width:100%;max-height:210px}.writing-book-copy{padding:16px 12px 16px 10px}.writing-eyebrow{font-size:10px;margin-bottom:8px}.writing-book-copy h2{font-size:25px;line-height:1.06;margin-bottom:6px;letter-spacing:-.035em}.writing-book-subtitle{font-size:14px;margin-bottom:15px}.writing-book-description{display:none}.writing-actions{flex-direction:column;gap:8px}.writing-actions .button{min-height:44px;font-size:12px;padding:10px 6px;gap:6px}.writing-actions .button svg{width:18px;height:18px}.writing-project>a{min-height:123px;padding:15px 46px 15px 120px}.writing-project img{width:105px;height:100%;object-position:35% center;opacity:.85}.writing-project-top{margin-bottom:7px}.writing-project h2{font-size:23px;line-height:1.05}.writing-project h2 br{display:none}.writing-project .writing-arrow{position:absolute;right:10px;top:50%;transform:translateY(-50%);width:30px;height:30px}.writing-project h3{font-size:17px;margin-bottom:4px}.writing-project p{font-size:12px;line-height:1.3}.writing-notes{margin-top:20px}.writing-section-heading{gap:8px;margin-bottom:12px}.writing-section-heading h2{font-size:30px}.writing-section-heading>a{font-size:11px;max-width:115px;text-align:right;line-height:1.3}.writing-notes-grid{grid-template-columns:1fr;gap:15px}.writing-note-image{height:155px}.writing-note-copy{padding:15px 14px 18px}.writing-note-category{font-size:11px}.writing-note h3{font-size:24px}.writing-note-excerpt{font-size:14px;max-width:90%}.writing-note-date{font-size:12px}.writing-quotation{min-height:240px;margin:22px -20px -22px;padding:28px 25px;gap:15px;background-position:58% center}.writing-quotation h2{font-size:31px}.writing-quotation blockquote{font-size:24px}.writing-quotation figcaption{font-size:11px}.writing-quotation-link{width:44px;height:44px}.writing-page .interaction-notice{position:fixed;bottom:16px}}
+@media(max-width:359px){.writing-portrait{right:-14px;height:360px}.writing-hero{padding-top:135px;min-height:360px}.writing-hero h1{font-size:54px}.writing-subtitle{font-size:21px}.writing-feature{grid-template-columns:35% 65%}.writing-book-copy{padding-right:9px}.writing-book-copy h2{font-size:23px}.writing-actions .button{font-size:11px;gap:4px}.writing-project>a{padding-left:103px}.writing-project img{width:91px}.writing-project h2{font-size:21px}.writing-project h3{font-size:16px}.writing-quotation{margin-left:-14px;margin-right:-14px;margin-bottom:-18px;padding:24px 20px}}

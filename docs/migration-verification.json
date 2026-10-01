@@ -1,0 +1,97 @@
+{
+  "build": "Next.js production build + TypeScript: passed",
+  "localNode": "24.19.0",
+  "vercelNode": "22.x configured; not executed locally",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "h1": 1,
+      "canonical": "http://localhost:3000",
+      "robots": "noindex, nofollow",
+      "images": 5,
+      "validJsonLd": true
+    },
+    {
+      "route": "/teatro/",
+      "status": 200,
+      "h1": 1,
+      "canonical": "http://localhost:3000/teatro/",
+      "robots": "noindex, nofollow",
+      "images": 10,
+      "validJsonLd": true
+    },
+    {
+      "route": "/scrivo/",
+      "status": 200,
+      "h1": 1,
+      "canonical": "http://localhost:3000/scrivo/",
+      "robots": "noindex, nofollow",
+      "images": 7,
+      "validJsonLd": true
+    },
+    {
+      "route": "/video/",
+      "status": 200,
+      "h1": 1,
+      "canonical": "http://localhost:3000/video/",
+      "robots": "noindex, nofollow",
+      "images": 10,
+      "validJsonLd": true
+    },
+    {
+      "route": "/chi-sono/",
+      "status": 200,
+      "h1": 1,
+      "canonical": "http://localhost:3000/chi-sono/",
+      "robots": "noindex, nofollow",
+      "images": 6,
+      "validJsonLd": true
+    },
+    {
+      "route": "/contatti/",
+      "status": 200,
+      "h1": 1,
+      "canonical": "http://localhost:3000/contatti/",
+      "robots": "noindex, nofollow",
+      "images": 1,
+      "validJsonLd": true
+    },
+    {
+      "route": "/press/",
+      "status": 200,
+      "h1": 1,
+      "canonical": "http://localhost:3000/press/",
+      "robots": "noindex, nofollow",
+      "images": 10,
+      "validJsonLd": true
+    },
+    {
+      "route": "/libri/l-hai-scelto-tu/",
+      "status": 200,
+      "h1": 1,
+      "canonical": "http://localhost:3000/libri/l-hai-scelto-tu/",
+      "robots": "noindex, nofollow",
+      "images": 3,
+      "validJsonLd": true
+    },
+    {
+      "route": "/teatro/chiamami-papa/",
+      "status": 200,
+      "h1": 1,
+      "canonical": "http://localhost:3000/teatro/chiamami-papa/",
+      "robots": "noindex, nofollow",
+      "images": 1,
+      "validJsonLd": true
+    }
+  ],
+  "contactDisabled": 503,
+  "lockfileImporters": "match package.json; fresh offline install unavailable because package mirror metadata are missing",
+  "portableCodeDifference": [
+    "content/site.ts"
+  ],
+  "visualBrowserVerification": "Unavailable: browser control timed out; no new visual verification claimed",
+  "githubRepository": "antozz996/peppe-ventura \u2014 imported by the commit containing this report",
+  "vercelDeployment": "not created; connector deployment tool unavailable",
+  "repositoryVisibility": "public"
+}

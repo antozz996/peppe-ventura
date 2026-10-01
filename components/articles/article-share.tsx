@@ -1,0 +1,10 @@
+'use client';
+import {useState} from 'react';
+
+export function ArticleShare({title,url,preview=false}:{title:string;url:string;preview?:boolean}){
+ const [message,setMessage]=useState('');const [manualCopy,setManualCopy]=useState(false);
+ const track=(method:string)=>{if(!preview)window.dispatchEvent(new CustomEvent('peppe:analytics',{detail:{name:'article_share',method,url}}))};
+ async function copy(){try{if(!navigator.clipboard?.writeText)throw new Error('clipboard_unavailable');await navigator.clipboard.writeText(url);setMessage('Link copiato.');setManualCopy(false);track('copy')}catch{setManualCopy(true);setMessage('Seleziona il link e copialo.')}}
+ async function share(){if(!navigator.share){await copy();return}try{await navigator.share({title,url});track('native');setMessage('Condivisione aperta.')}catch(error){if(error instanceof Error&&error.name==='AbortError')return;await copy()}}
+ return <section className="article-share" aria-label={preview?'Condividi l’anteprima':'Condividi l’appunto'}><p>{preview?'Condividi questa anteprima.':'Condividi questo appunto.'}</p><div><button type="button" className="article-share-native" onClick={share}>Condividi</button><button type="button" onClick={copy}>Copia link</button><a href={`https://wa.me/?text=${encodeURIComponent(`${title} ${url}`)}`} target="_blank" rel="noopener noreferrer" onClick={()=>track('whatsapp')}>WhatsApp<span className="sr-only">, apre una nuova scheda</span></a><a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`} target="_blank" rel="noopener noreferrer" onClick={()=>track('facebook')}>Facebook<span className="sr-only">, apre una nuova scheda</span></a><a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`} target="_blank" rel="noopener noreferrer" onClick={()=>track('linkedin')}>LinkedIn<span className="sr-only">, apre una nuova scheda</span></a></div><p role="status" aria-live="polite" className="article-share-status">{message}</p>{manualCopy&&<label className="article-copy-fallback">Link dell’appunto<input value={url} readOnly onFocus={event=>event.currentTarget.select()}/></label>}</section>
+}

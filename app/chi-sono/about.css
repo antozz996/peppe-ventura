@@ -1,0 +1,48 @@
+.about-page{min-height:100svh;overflow:hidden;background:radial-gradient(ellipse at 76% 8%,#35201745,transparent 54%),#0a0707}
+.about-hero{position:relative;isolation:isolate;min-height:355px;padding-top:25px}
+.about-portrait{position:absolute;z-index:0;right:-30px;top:-25px;width:64%;height:420px;pointer-events:none}
+.about-portrait img{width:100%;height:100%;object-fit:cover;object-position:center 15%;filter:contrast(1.03)}
+.about-portrait:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#0a0707,transparent 34%,transparent 88%,#0a070799),linear-gradient(0deg,#0a0707,transparent 25%,transparent 85%,#0a0707)}
+.about-intro{position:relative;z-index:2;max-width:560px;padding-left:10px}
+.about-breadcrumb{font-size:12px;color:#d5c9bf;margin-bottom:8px}
+.about-breadcrumb a{display:inline-flex;align-items:center;min-height:24px}
+.about-breadcrumb a:hover{text-decoration:underline}
+.about-hero h1{font-family:var(--serif);font-size:104px;font-weight:700;line-height:1;letter-spacing:-.045em;margin:0 0 5px}
+.about-subtitle{font-size:31px;line-height:1.16;white-space:pre-line;margin:0 0 16px;letter-spacing:-.015em}
+.about-description{font-size:17px;line-height:1.4;max-width:465px;margin:0}
+.about-areas{position:relative;z-index:3;border:1px solid #95232d;border-radius:7px;background:#080606f5;overflow:hidden}
+.about-areas ul{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));list-style:none;padding:0;margin:0}
+.about-areas li{position:relative;min-width:0}
+.about-areas li+li:before{content:'';position:absolute;left:0;top:28px;bottom:28px;width:1px;background:#68101c}
+.about-areas a{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:22px 15px 20px;min-height:143px;transition:background .2s}
+.about-areas a:hover{background:#2b0e13}
+.about-areas a>svg{width:35px;height:35px;color:#ff334b;margin-bottom:11px}
+.about-areas h2{font-family:var(--serif);font-size:22px;font-weight:700;line-height:1.15;margin:0 0 5px}
+.about-areas p{font-size:14px;line-height:1.25;margin:0 auto;max-width:145px;color:#e0d8cf}
+.about-area-arrow{display:none}
+.about-journey{position:relative;display:grid;grid-template-columns:54% 1fr;gap:40px;align-items:center;margin-top:25px;scroll-margin-top:20px}
+.about-journey>img{width:100%;height:286px;object-fit:cover;object-position:center;border-radius:5px}
+.about-journey-copy{padding-right:10px}
+.about-eyebrow{font-family:var(--sans);font-weight:400;font-size:12px;letter-spacing:.015em;color:#ff6b77;text-transform:uppercase;margin:0 0 7px}
+.about-journey h2{font-family:var(--serif);font-size:43px;line-height:1.08;letter-spacing:-.035em;font-weight:700;margin:0 0 14px}
+.about-journey-copy>p:not(.about-eyebrow){font-size:17px;line-height:1.4;color:#e1d8cf;margin:0 0 20px}
+.about-journey .button{font-size:14px;min-height:48px;padding:11px 20px;border-color:#8f8780;gap:18px}
+.about-journey .button svg{width:21px;height:21px;color:#ff475b}
+.about-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:18px;scroll-margin-top:20px}
+.about-card{border:1px solid #932832;border-radius:6px;background:#080606db;overflow:hidden;transition:border-color .2s}
+.about-card-image{height:126px;overflow:hidden}
+.about-card-image img{width:100%;height:100%;object-fit:cover;transition:transform .2s}
+.about-card-copy{position:relative;padding:12px 15px 20px;min-height:105px}
+.about-card h3{font-family:var(--serif);font-size:22px;line-height:1.15;letter-spacing:-.02em;font-weight:700;margin:0 0 7px}
+.about-card p{font-size:14px;line-height:1.35;color:#e0d6cd;margin:0;padding-right:25px}
+.about-card-arrow{position:absolute;right:13px;bottom:14px;display:flex;align-items:center;justify-content:center;border:1px solid #bf3644;border-radius:50%;width:29px;height:29px;color:#ff6473}
+.about-card-arrow svg{width:20px;height:20px;transition:transform .2s}
+.about-card:hover{border-color:#f54457}
+.about-card:hover img{transform:scale(1.025)}
+.about-card:hover .about-card-arrow svg{transform:translateX(2px)}
+.about-quotation{display:flex;align-items:center;min-height:150px;padding:25px 10px 5px;margin-top:2px}
+.about-quotation-status{font-size:12px;color:#d0beb3;letter-spacing:.02em;margin:7px 0 9px}
+.about-quotation-text{font-family:var(--serif);font-size:34px;font-style:italic;line-height:1.2;margin:0;max-width:780px}
+@media(min-width:768px) and (max-width:1099px){.about-page .site-header{gap:12px}.about-page .desktop-nav{gap:14px}.about-hero{min-height:335px}.about-intro{max-width:48%}.about-hero h1{font-size:82px}.about-subtitle{font-size:27px}.about-description{font-size:15px}.about-portrait{right:-24px;width:62%;height:400px}.about-areas a{padding:20px 10px;min-height:143px}.about-areas h2{font-size:20px}.about-areas p{font-size:13px}.about-journey{gap:25px;grid-template-columns:51% 1fr}.about-journey>img{height:280px}.about-journey h2{font-size:34px}.about-journey-copy>p:not(.about-eyebrow){font-size:15px}.about-cards{gap:14px}.about-card-image{height:108px}.about-card-copy{padding:12px 11px 17px;min-height:125px}.about-card h3{font-size:20px}.about-card p{font-size:13px;padding-right:20px}.about-card-arrow{width:26px;height:26px;right:8px;bottom:11px}}
+@media(max-width:767px){.about-hero{min-height:345px;padding-top:155px}.about-portrait{top:0;right:-60px;width:100%;height:340px}.about-portrait img{object-position:center top}.about-portrait:after{background:linear-gradient(90deg,#0a0707b0,transparent 45%,transparent 75%,#0a070755),linear-gradient(0deg,#0a0707 1%,#0a0707db 23%,#0a070790 46%,transparent 65%,#0a070777 100%)}.about-intro{max-width:none;padding:0}.about-breadcrumb{position:absolute;top:-136px;left:0;font-size:11px}.about-hero h1{font-size:59px;margin-bottom:6px;text-shadow:0 2px 12px #0009}.about-subtitle{font-size:22px;line-height:1.12;max-width:320px;margin-bottom:17px;text-shadow:0 1px 9px #000}.about-description{font-size:14px;line-height:1.35;max-width:325px;margin-bottom:20px;text-shadow:0 1px 7px #000}.about-areas{border:0;background:transparent;overflow:visible}.about-areas ul{grid-template-columns:1fr;gap:8px}.about-areas li{border:1px solid #8a2730;border-radius:5px;background:#070606ed}.about-areas li+li:before{display:none}.about-areas a{flex-direction:row;align-items:center;justify-content:flex-start;text-align:left;gap:17px;min-height:57px;padding:9px 45px 9px 17px;border-radius:5px}.about-areas a>svg{width:28px;height:28px;flex-shrink:0;margin:0}.about-areas h2{font-size:18px;margin:0 0 3px}.about-areas p{font-size:13px;max-width:none;margin:0}.about-area-arrow{position:absolute;right:12px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:27px;height:27px;border:1px solid #c32b3b;border-radius:50%;color:#ff5568}.about-area-arrow svg{width:19px;height:19px}.about-journey{grid-template-columns:1fr;gap:8px;margin-top:24px}.about-journey>img{height:auto;aspect-ratio:3.7/1;object-position:center top;border-radius:4px}.about-journey-copy{padding:0}.about-eyebrow{font-size:11px;margin-bottom:5px}.about-journey h2{font-size:32px;margin-bottom:10px}.about-journey-copy>p:not(.about-eyebrow){font-size:14px;line-height:1.4;margin-bottom:15px}.about-journey .button{min-height:44px;font-size:13px;padding:10px 17px;gap:16px}.about-cards{grid-template-columns:1fr;gap:10px;margin-top:20px}.about-card{display:grid;grid-template-columns:32% 1fr;min-height:115px}.about-card-image{height:100%;min-height:115px}.about-card-image img{object-position:center}.about-card-copy{min-height:115px;padding:12px 35px 14px 13px}.about-card h3{font-size:19px;margin-bottom:6px}.about-card p{font-size:13px;line-height:1.3;padding:0}.about-card-arrow{right:8px;bottom:10px;width:25px;height:25px}.about-card-arrow svg{width:18px;height:18px}.about-quotation{padding:27px 0 12px;min-height:145px;margin-top:0}.about-quotation-text{font-size:29px;max-width:320px}.about-quotation-status{font-size:12px}.about-page .interaction-notice{position:fixed;bottom:16px}}
+@media(max-width:359px){.about-hero{min-height:340px;padding-top:145px}.about-portrait{right:-45px;height:330px}.about-hero h1{font-size:51px}.about-subtitle{font-size:21px}.about-description{font-size:13px;max-width:280px}.about-areas a{padding-left:14px;gap:14px}.about-areas p{font-size:12px}.about-journey h2{font-size:30px}.about-card h3{font-size:18px}.about-card p{font-size:12px}.about-card-copy{padding-left:10px;padding-right:30px}.about-quotation-text{font-size:27px}}
