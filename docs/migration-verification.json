@@ -93,5 +93,6 @@
   "visualBrowserVerification": "Unavailable: browser control timed out; no new visual verification claimed",
   "githubRepository": "antozz996/peppe-ventura \u2014 imported by the commit containing this report",
   "vercelDeployment": "not created; connector deployment tool unavailable",
-  "repositoryVisibility": "public"
+  "repositoryVisibility": "public",
+  "vercelPackageManager": "Auto-detection from lockfileVersion 9.0; no install override and no unsupported pnpm 11 pin. Verified against Vercel package-manager documentation on 2026-10-01."
 }

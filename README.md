@@ -4,7 +4,7 @@ Versione portabile per **GitHub e Vercel**, preparata dal progetto approvato il 
 
 ## Avvio e build
 
-Node.js 22 e pnpm, versione indicata in `package.json`.
+Node.js 22 e pnpm 10. Su Vercel il package manager viene rilevato dal lockfile, senza override del comando di installazione.
 
 ```bash
 corepack enable
@@ -21,7 +21,7 @@ Repository: [antozz996/peppe-ventura](https://github.com/antozz996/peppe-ventura
 
 ## Vercel
 
-Importare il repository GitHub nel team desiderato. Framework: **Next.js**. Root directory: radice del repository. Build: `pnpm build`. Installazione: `pnpm install --frozen-lockfile`. Lasciare la directory di output e l’avvio ai valori predefiniti del framework.
+Importare il repository GitHub nel team desiderato. Framework: **Next.js**. Root directory: radice del repository. Lasciare Build Command, Install Command e Output Directory ai valori predefiniti del framework. Il lockfile consente a Vercel di rilevare pnpm; un override generico del comando di installazione può selezionare una versione precedente non compatibile.
 
 1. Impostare `NEXT_PUBLIC_SITE_URL` sul dominio realmente assegnato, con `https://` e senza slash finale. Se assente su Vercel, viene utilizzato `VERCEL_PROJECT_PRODUCTION_URL`; in locale il fallback è `http://localhost:3000`.
 2. Mantenere `SITE_INDEXABLE=false` durante la revisione.
