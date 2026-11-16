@@ -32,7 +32,7 @@ Le variabili pubbliche usate nei metadati vengono lette durante la build: una mo
 
 ## Contatti
 
-Il form è disattivato per impostazione predefinita. L’endpoint `/api/contact` viene eseguito come funzione Next.js. L’attivazione richiede `CONTACT_FORM_ENABLED=true`, un destinatario HTTPS reale in `CONTACT_DELIVERY_URL`, un token server in `CONTACT_DELIVERY_TOKEN` e una policy valida in `CONTACT_PRIVACY_URL`. Non inserire il token nel client o nel repository. Non impostare questi valori finché il servizio di consegna e l’informativa non sono pronti.
+Il form invia i messaggi per email a `info@peppeventura.it` tramite la **casella Aruba (SMTP, `smtps.aruba.it:465`)**, con `nodemailer`. L’endpoint `/api/contact/` è una funzione Next.js con controllo dell’origine, limiti di lunghezza e campo anti-bot; "Rispondi" scrive direttamente a chi ha compilato il form. È attivo solo con `CONTACT_FORM_ENABLED=true` e `SMTP_PASSWORD` (password della casella, impostata solo su Vercel). Facoltativi: `SMTP_USER`, `SMTP_HOST`, `SMTP_PORT`, `CONTACT_TO`, `CONTACT_PRIVACY_URL` (predefinita `/privacy/`). La password resta solo sul server. La pagina `/contatti/` è statica: dopo ogni modifica alle variabili serve un nuovo deploy. L’informativa in `/privacy/` è una bozza da far approvare a Peppe.
 
 ## Pagine presenti
 

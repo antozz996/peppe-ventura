@@ -1,3 +1,4 @@
+import nodemailer from 'nodemailer';
 import {contact,contactRequestTypes} from '@/content/contact';
 import {contactConfiguration} from '@/lib/contact-config';
 
@@ -23,9 +24,14 @@ export async function POST(request:Request){
  const type=typeof data.type==='string'?data.type:'';
  const message=typeof data.message==='string'?data.message.trim():'';
  if(!name||name.length>100||email.length>254||!/^\S+@\S+\.\S+$/.test(email)||!contactRequestTypes.includes(type)||!message||message.length>5000)return reply({message:'Controlla i campi obbligatori e l’indirizzo email.'},400);
+ const oneLine=(value:string)=>value.replace(/[\r\n]+/g,' ').slice(0,100);
+ const text=`Nuovo messaggio dal form contatti di peppeventura.it\n\nNome: ${name}\nEmail: ${email}\nTipo di richiesta: ${type}\n\nMessaggio:\n${message}\n\n—\nRispondi direttamente a questa email per scrivere a ${email}.`;
  try{
-  const response=await fetch(config.destination,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${config.token}`},body:JSON.stringify({name,email,type,message}),signal:AbortSignal.timeout(10000),redirect:'error'});
-  if(!response.ok)throw new Error('Delivery rejected');
+  const transport=nodemailer.createTransport({host:config.smtp.host,port:config.smtp.port,secure:config.smtp.secure,auth:{user:config.smtp.user,pass:config.smtp.password},connectionTimeout:10000,greetingTimeout:10000,socketTimeout:15000});
+  await transport.sendMail({from:config.from,to:config.to,replyTo:{name:oneLine(name),address:email},subject:`Sito · ${oneLine(type)} · ${oneLine(name)}`,text});
   return reply({message:'Messaggio inviato. Grazie per avermi scritto.'},200);
- }catch{return reply({message:`Il messaggio non è stato inviato. Riprova più tardi o scrivimi a ${contact.email}.`},502);}
+ }catch(error){
+  console.error('contact_delivery_failed',error instanceof Error?error.message:'unknown');
+  return reply({message:`Il messaggio non è stato inviato. Riprova più tardi o scrivimi a ${contact.email}.`},502);
+ }
 }
