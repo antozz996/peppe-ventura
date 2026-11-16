@@ -4,7 +4,7 @@ import {Header} from '@/components/home/header';
 import {HomeInteractions} from '@/components/home/interactions';
 import {Icon} from '@/components/home/icons';
 import {site} from '@/content/site';
-import {theatre,theatreDates,otherShows,theatreGallery} from '@/content/theatre';
+import {theatre,theatreDates,theatreGallery} from '@/content/theatre';
 import './theatre.css';
 
 const title='Peppe Ventura a teatro | Spettacoli e date';
@@ -49,7 +49,6 @@ export default function TheatrePage(){return <div className="theatre-page">
      <p className="theatre-date-note">Le nuove date saranno pubblicate qui.</p>
     </section>
    </div>
-   <section className="theatre-other" aria-labelledby="other-title"><h2 id="other-title">Altri spettacoli</h2><div className="theatre-other-grid">{otherShows.map((show,index)=><article className="theatre-small-card" key={show.image}><img src={show.image} width="160" height="110" alt="" loading="lazy"/><div><span className="theatre-placeholder">Segnaposto {index+1}</span><h3>{show.title}</h3><p>Dettagli in aggiornamento.</p></div></article>)}</div></section>
    <section className="theatre-backstage" aria-labelledby="backstage-title"><div className="theatre-section-heading"><h2 id="backstage-title">Dietro le quinte</h2><p>Foto e momenti dal vivo.</p></div><div className="theatre-gallery">{theatreGallery.map(photo=><a key={photo.image} href={`/images/theatre/${photo.image}.webp`} target="_blank" rel="noopener noreferrer" aria-label={`Apri fotografia: ${photo.alt}`}><img src={`/images/theatre/${photo.image}.webp`} width="700" height="900" loading="lazy" alt={photo.alt}/></a>)}</div></section>
   </main>
   <HomeInteractions/>

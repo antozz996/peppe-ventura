@@ -1,7 +1,7 @@
 // Only verified books and a sourced quotation. Editorial cards are explicit placeholders.
 export const writing={
  title:'Scrivo',
- subtitle:'Parole per capire,\nridere e restare umani.',
+ subtitle:'Parole che messe insieme formano una frase;\nche messe insieme formano una storia.',
  introduction:'Racconti, libri, articoli e pensieri su ciò che mi attraversa: la vita, le relazioni, la famiglia, l’ironia e le contraddizioni del presente.',
  description:'Scopri i libri, gli scritti e gli appunti di Peppe Ventura: storie, riflessioni e contenuti originali dell’autore.',
  hero:'/images/writing/portrait-960.webp',
@@ -30,9 +30,8 @@ export const writing={
   source:'https://www.metropolisweb.it/2025/08/05/dal-web-alla-stampa-peppe-ventura-racconta-suo-libro-lhai-scelto-tu/',
  },
 };
+// Articoli di stampa indicati da Peppe (WhatsApp, 22/10/2026). Link esterni alle testate; immagini del sito.
 export const writingNotes=[
- {id:'persone',category:'Persone',image:'people'},
- {id:'vita-adulta',category:'Vita adulta',image:'growing'},
- {id:'teatro',category:'Teatro',image:'stage'},
- {id:'scrittura',category:'Scrittura',image:'notes'},
-].map(note=>({...note,title:'Titolo da definire',excerpt:'Spazio per un futuro testo originale. Il contenuto sarà pubblicato qui.',dateLabel:'Data da definire'}));
+ {id:'napoli-village',category:'Napoli Village',image:'notes',title:'“L’hai scelto tu”, il viaggio emotivo di Peppe Ventura',excerpt:'Com’è nato il desiderio di scrivere questo libro e cosa l’ha spinto a raccontare la storia di Francesco ed Elena.',dateLabel:'30 luglio 2025',date:'2025-07-30',href:'https://www.napolivillage.com/cultura/lhai-scelto-tu-il-viaggio-emotivo-di-peppe-ventura/'},
+ {id:'metropolis',category:'Metropolis',image:'people',title:'Dal web alla stampa: Peppe Ventura racconta il suo libro «L’hai scelto tu»',excerpt:'Dai video a una storia lunga una vita: il romanzo d’esordio di un autore che ha trovato nella scrittura una casa per le emozioni.',dateLabel:'5 agosto 2025',date:'2025-08-05',href:'https://www.metropolisweb.it/2025/08/05/dal-web-alla-stampa-peppe-ventura-racconta-suo-libro-lhai-scelto-tu/'},
+];

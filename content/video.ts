@@ -3,7 +3,7 @@ import {socials} from './site';
 export const videoPage={
  title:'Video',
  subtitle:'Storie, sketch e vita vera.\nDal palco al quotidiano.',
- introduction:'Un altro modo per raccontare le persone: tra ironia, osservazione e momenti reali, dentro e fuori dal teatro.',
+ introduction:'“Mi piace riportare la realtà sul web. È come se potessi rivivere una cosa che mi è successa, una sorta di replay…”',
  description:'Guarda i video di Peppe Ventura tra teatro, sketch, backstage, interviste e contenuti dai suoi canali ufficiali.',
  hero:'/images/videos/hero-960.webp',
  heroAlt:'Peppe Ventura sul palco, con un microfono in mano e luci calde sullo sfondo',
@@ -25,11 +25,12 @@ export const featuredVideoSlots:VideoSlot[]=[
  {id:'featured-interview',category:'Interviste',image:'interview',imageAlt:'Peppe Ventura con un microfono durante un evento'},
  {id:'featured-theatre',category:'Teatro',image:'theatre',imageAlt:'Peppe Ventura di spalle davanti al pubblico in teatro'},
 ];
-export const otherVideoSlots:VideoSlot[]=[
- {id:'other-sketch',category:'Sketch',image:'live',imageAlt:'Peppe Ventura con il microfono sul palco'},
- {id:'other-theatre',category:'Teatro',image:'theatre',imageAlt:'Peppe Ventura davanti al pubblico, visto dal palco'},
- {id:'other-backstage',category:'Backstage',image:'backstage',imageAlt:'Peppe Ventura sul palco, mentre indica il pubblico'},
- {id:'other-interview',category:'Interviste',image:'interview',imageAlt:'Peppe Ventura durante un evento dal vivo'},
- {id:'other-life',category:'Vita vera',image:'sketch',imageAlt:'Peppe Ventura in una fotografia di scena in bianco e nero'},
-];
-export const videoFilters=['Tutti','Sketch','Teatro','Interviste','Backstage','Vita vera'];
+// Reel ufficiali indicati da Peppe (WhatsApp, 22/10/2026). Le immagini sono foto di scena del sito, non frame dei video.
+export type InstagramVideo={id:string;title:string;category:string;image:string;imageAlt:string;href:string};
+export const instagramVideos:InstagramVideo[]=[
+ {id:'DT0CNiijCQD',title:'Era tutto pronto per l’intervista a Carlo Conti…',category:'Vita vera',image:'interview',imageAlt:'Peppe Ventura con un microfono durante un evento'},
+ {id:'DT_C0zFDLqW',title:'Questo palco non è stato un punto d’arrivo',category:'Teatro',image:'theatre',imageAlt:'Peppe Ventura davanti al pubblico, visto dal palco'},
+ {id:'DT0xSt0jHPh',title:'La mia ragazza sminuisce i miei problemi',category:'Comfort Zone',image:'sketch',imageAlt:'Peppe Ventura in una fotografia di scena in bianco e nero'},
+ {id:'DL4oOJ8o0VH',title:'Piccola bugia a Rocco Hunt',category:'Vita vera',image:'backstage',imageAlt:'Peppe Ventura sul palco, mentre indica il pubblico'},
+ {id:'CzXIXWwIhru',title:'Peppe Ventura su Instagram',category:'Reel',image:'live',imageAlt:'Peppe Ventura con il microfono sul palco'},
+].map(video=>({...video,href:`https://www.instagram.com/reel/${video.id}/`}));

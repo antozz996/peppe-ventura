@@ -1,6 +1,6 @@
 export const contact={
  title:'Contatti e\ncollaborazioni',
- introduction:'Nuovi progetti, eventi, idee o semplicemente un caffè per parlarne? Sono sempre aperto a nuove occasioni di incontro e collaborazione.',
+ introduction:'Nuovi progetti, eventi, format… idee? O me vuò offrere sulo nu cafè.',
  description:'Contatta Peppe Ventura per spettacoli, eventi, collaborazioni, stampa, conduzioni e richieste professionali.',
  hero:'/images/contact/hero-770.webp',
  heroAlt:'Peppe Ventura in abito scuro, con un microfono in mano durante un evento dal vivo',
