@@ -4,7 +4,8 @@ export const site = {
   heroKicker: 'Autore Attore Presentatore Napoletano classe 1995.',
   headline: 'Storie, ansia e perfino qualche sorriso.',
   description: 'Sito ufficiale di Peppe Ventura, autore, attore e presentatore. Teatro, libri, video, spettacoli, progetti e attività.',
-  origin: (process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000')).replace(/\/$/, ''),
+  // trim + BOM: un valore incollato con spazi o BOM rompe new URL() e quindi la build.
+  origin: (process.env.NEXT_PUBLIC_SITE_URL?.replace(/^﻿/, '').trim() || (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000')).replace(/\/$/, ''),
   production: process.env.SITE_INDEXABLE === 'true' && (!process.env.VERCEL_ENV || process.env.VERCEL_ENV === 'production'),
   tickets: 'https://www.ticketone.it/artist/peppe-ventura/',
   hero: '/images/peppe-960.webp',
