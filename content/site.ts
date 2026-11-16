@@ -13,15 +13,16 @@ export const site = {
 export const navigation = [
   {label:'Home', href:'/', event:'nav_home'},
   {label:'Teatro', href:'/teatro/', event:'nav_teatro'},
-  {label:'Scrivo', href:'/scrivo/', event:'nav_scrivo'},
+  {label:'Progetti e scrittura', href:'/scrivo/', event:'nav_scrivo'},
   {label:'Video', href:'/video/', event:'nav_video'},
-  {label:'Contatti', href:'/contatti/', event:'nav_contatti'},
+  {label:'Lavoriamo insieme', href:'/contatti/', event:'nav_contatti'},
 ];
+// Le quattro sezioni della home, in quest'ordine.
 export const cards = [
-  {title:'Teatro', description:'Spettacoli, date e nuovi progetti.', href:'/teatro/', image:'/images/theatre.webp', event:'teatro_click_home'},
-  {title:'Scrivo', description:'Idee, storie e altre cose vere.', href:'/scrivo/', image:'/images/writing.webp', event:'scrivo_click_home'},
-  {title:'Video', description:'Sketch, talk e dietro le quinte.', href:'/video/', image:'/images/video.webp', event:'video_click_home'},
-  {title:'Contatti e collaborazioni', description:'Lavoriamo insieme.', href:'/contatti/', image:'/images/contact.webp', event:'contact_click_home'},
+  {number:'01', title:'Teatro', description:'Spettacoli, commedie e progetti teatrali.', href:'/teatro/', image:'/images/theatre.webp', event:'teatro_click_home'},
+  {number:'02', title:'Progetti e scrittura', description:'Storie, idee e parole che diventano progetti.', href:'/scrivo/', image:'/images/writing.webp', event:'scrivo_click_home'},
+  {number:'03', title:'Video', description:'Sketch, personaggi, format e dietro le quinte.', href:'/video/', image:'/images/video.webp', event:'video_click_home'},
+  {number:'04', title:'Lavoriamo insieme', description:'Collaborazioni, eventi e nuove opportunità.', href:'/contatti/', image:'/images/contact.webp', event:'contact_click_home'},
 ];
 export const socials = [
   {name:'Instagram', href:'https://www.instagram.com/peppeventura/', icon:'instagram', event:'social_instagram_home'},
