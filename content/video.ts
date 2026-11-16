@@ -21,8 +21,8 @@ export const videoPlatforms=socials.map(social=>({...social,...platformCopy[soci
 export type InstagramVideo={id:string;title:string;category:string;image:string;imageAlt:string;href:string};
 export const instagramVideos:InstagramVideo[]=[
  {id:'DT0CNiijCQD',title:'Era tutto pronto per l’intervista a Carlo Conti…',category:'Vita vera',image:'interview',imageAlt:'Peppe Ventura con un microfono durante un evento'},
- {id:'DT_C0zFDLqW',title:'Questo palco non è stato un punto d’arrivo',category:'Teatro',image:'theatre',imageAlt:'Peppe Ventura davanti al pubblico, visto dal palco'},
- {id:'DT0xSt0jHPh',title:'La mia ragazza sminuisce i miei problemi',category:'Comfort Zone',image:'sketch',imageAlt:'Peppe Ventura in una fotografia di scena in bianco e nero'},
+ {id:'DT_C0zFDLqW',title:'Questo palco non è stato un punto d’arrivo',category:'Teatro',image:'palco-pubblico',imageAlt:'Peppe Ventura in scena, visto dalla platea oltre le teste del pubblico'},
+ {id:'DT0xSt0jHPh',title:'La mia ragazza sminuisce i miei problemi',category:'Comfort Zone',image:'comfort-zone',imageAlt:'Peppe Ventura in scena, seduto sul letto mentre guarda il telefono'},
  {id:'DL4oOJ8o0VH',title:'Piccola bugia a Rocco Hunt',category:'Vita vera',image:'backstage',imageAlt:'Peppe Ventura sul palco, mentre indica il pubblico'},
  {id:'CzXIXWwIhru',title:'Peppe Ventura su Instagram',category:'Reel',image:'live',imageAlt:'Peppe Ventura con il microfono sul palco'},
 ].map(video=>({...video,href:`https://www.instagram.com/reel/${video.id}/`}));

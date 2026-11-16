@@ -22,10 +22,11 @@ export const theatreDates = [{
  streetAddress:'Via Raffaele Tarantino 10',
  tickets:theatre.show.tickets,
 }];
+// Foto di scena fornite da Peppe (16/11/2026). Ognuna è usata solo qui.
 export const theatreGallery = [
- {image:'audience',alt:'Peppe Ventura di spalle sul palco, davanti al pubblico'},
- {image:'stage-profile',alt:'Peppe Ventura sul palco indica una persona nel pubblico'},
- {image:'presentation',alt:'Peppe Ventura sul palco con microfono e un riconoscimento in mano'},
- {image:'backstage',alt:'Peppe Ventura con le mani unite durante una scena, in bianco e nero'},
- {image:'live',alt:'Peppe Ventura in abito scuro parla al microfono sul palco'},
+ {image:'scena-insieme',width:1200,height:800,alt:'Peppe Ventura in scena con altri due attori, seduti in una camera da letto ricostruita sul palco'},
+ {image:'sguardo',width:800,height:1200,alt:'Peppe Ventura seduto sul bordo del letto in scena, guarda verso il pubblico'},
+ {image:'gesto',width:800,height:1200,alt:'Peppe Ventura seduto su uno sgabello blu, con il braccio alzato durante una scena'},
+ {image:'telefono',width:800,height:1200,alt:'Peppe Ventura in pigiama parla al telefono, con la mano sul fianco'},
+ {image:'luci-sala',width:1200,height:800,alt:'Il pubblico in sala illumina il teatro con le torce dei telefoni'},
 ];

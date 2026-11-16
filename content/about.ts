@@ -8,8 +8,8 @@ export const about={
  journey:{
   title:'Dal palco alla vita.',
   text:'Ho iniziato a raccontare le persone dalla realtà che mi circonda: la famiglia, gli amici, le contraddizioni, il lavoro, le cose che non funzionano e tutto quello che, nonostante tutto, ci fa ancora ridere.',
-  image:'/images/about/journey-960.webp',
-  imageAlt:'Peppe Ventura di spalle sul palco, davanti al pubblico in teatro',
+  image:'/images/about/piazza-960.webp',
+  imageAlt:'Peppe Ventura di spalle sul palco all’aperto, davanti a una piazza piena di pubblico',
  },
  // Replace only after Peppe approves a quotation; do not attribute this placeholder.
  quotation:{approved:false,label:'Una cosa importante',text:'Frase personale da approvare.'},

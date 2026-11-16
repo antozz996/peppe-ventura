@@ -49,7 +49,7 @@ export default function TheatrePage(){return <div className="theatre-page">
      <p className="theatre-date-note">Le nuove date saranno pubblicate qui.</p>
     </section>
    </div>
-   <section className="theatre-backstage" aria-labelledby="backstage-title"><div className="theatre-section-heading"><h2 id="backstage-title">Dietro le quinte</h2><p>Foto e momenti dal vivo.</p></div><div className="theatre-gallery">{theatreGallery.map(photo=><a key={photo.image} href={`/images/theatre/${photo.image}.webp`} target="_blank" rel="noopener noreferrer" aria-label={`Apri fotografia: ${photo.alt}`}><img src={`/images/theatre/${photo.image}.webp`} width="700" height="900" loading="lazy" alt={photo.alt}/></a>)}</div></section>
+   <section className="theatre-backstage" aria-labelledby="backstage-title"><div className="theatre-section-heading"><h2 id="backstage-title">Dietro le quinte</h2><p>Foto e momenti dal vivo.</p></div><div className="theatre-gallery">{theatreGallery.map(photo=><a key={photo.image} href={`/images/theatre/${photo.image}.webp`} target="_blank" rel="noopener noreferrer" aria-label={`Apri fotografia: ${photo.alt}`}><img src={`/images/theatre/${photo.image}.webp`} width={photo.width} height={photo.height} loading="lazy" alt={photo.alt}/></a>)}</div></section>
   </main>
   <HomeInteractions/>
  </div>

@@ -6,3 +6,6 @@ out/
 !.env.example
 *.tsbuildinfo
 .DS_Store
+
+# Foto originali fornite da Peppe (le versioni web sono in public/images)
+/foto/

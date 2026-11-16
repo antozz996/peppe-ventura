@@ -41,7 +41,7 @@ export default function WritingPage(){return <div className="writing-page">
    </section>
    <div className="writing-feature-grid">
     <article className="writing-feature" id="libro" aria-labelledby="book-title">
-     <div className="writing-book-image"><img src={writing.book.image} srcSet="/images/writing/cover-300.webp 300w, /images/writing/cover-600.webp 600w" sizes="(max-width:767px) 120px, 220px" width="600" height="800" alt="Copertina originale di L’hai scelto tu, di Peppe Ventura" loading="lazy"/></div>
+     <div className="writing-book-image"><img src="/images/writing/amazon-600.webp" srcSet="/images/writing/amazon-300.webp 300w, /images/writing/amazon-600.webp 600w" sizes="(max-width:767px) 120px, 220px" width="600" height="800" alt="Scheda Amazon di L’hai scelto tu: 5 stelle su 5 e numero 1 tra i più venduti in Storie d’amore contemporanee per ragazzi" loading="lazy"/></div>
      <div className="writing-book-copy"><p className="writing-eyebrow">Il mio libro</p><h2 id="book-title">{writing.book.title}</h2><p className="writing-book-subtitle">{writing.book.subtitle}</p><p className="writing-book-description">{writing.book.description}</p>
       <div className="writing-actions"><a className="button primary" href={writing.book.purchase} target="_blank" rel="noopener noreferrer" data-event="book_purchase_scrivo"><Icon name="ticket"/>Acquista il libro<Icon name="arrow"/><span className="sr-only"> su Amazon, in una nuova scheda</span></a><a className="button secondary" href={writing.book.details} data-pending="true" data-event="book_details_scrivo">Scopri di più<Icon name="down"/></a></div>
      </div>

@@ -24,7 +24,7 @@ export const books:Book[]=[{
   'L’incontro con Elena porta nella sua storia l’amore e la scoperta dell’altro. Ma porta anche la perdita, il dolore e la necessità di crescere. Il romanzo segue Francesco attraverso queste esperienze: i sogni che cerca di tenere vivi, le paure con cui deve confrontarsi e le fragilità che accompagnano il suo percorso.',
   'L’hai scelto tu racconta questa ricerca da vicino. La vicenda personale di Francesco incontra domande che riguardano chi cerca ancora il proprio posto: come dare forma alle emozioni, come attraversare una perdita e come continuare a immaginare il futuro. La scrittura rimane il filo che tiene insieme la storia.',
  ],
- introImage:{src:'/images/books/reading-960.webp',srcSet:'/images/books/reading-480.webp 480w, /images/books/reading-960.webp 960w',width:960,height:1280,alt:'Una fotografia editoriale delle mani di Peppe Ventura mentre sfoglia un libro'},
+ introImage:{src:'/images/books/copie-960.webp',srcSet:'/images/books/copie-480.webp 480w, /images/books/copie-960.webp 960w',width:960,height:1280,alt:'Decine di copie di L’hai scelto tu sparse su un tavolo'},
  whyWritten:{title:'Da dove è nato',paragraphs:[
   'Nell’intervista a Metropolis del 5 agosto 2025, Peppe racconta che il romanzo è nato dal bisogno di rallentare e trovare uno spazio in cui esprimere le emozioni senza sentirsi giudicato. La storia di Francesco ha preso forma dentro questa necessità: dare tempo a ciò che, nei contenuti online, passa spesso in pochi istanti.',
   'Il legame con la scrittura viene da prima. Peppe ricorda i temi del liceo e un’abitudine alle parole che per lui era già naturale. Francesco raccoglie una parte di questa esperienza, insieme al sentimento di chi cerca il proprio posto e desidera essere ascoltato.',
