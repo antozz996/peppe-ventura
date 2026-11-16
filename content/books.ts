@@ -42,7 +42,7 @@ export const books:Book[]=[{
  relatedBooks:[{title:'Caro prof ti scrivo…',description:'Con Samuele Ciambriello. Un confronto con le emozioni, i pensieri e le domande degli studenti.',href:'https://rogiosi.it/product/caro-prof-ti-scrivo/',external:true}],
  authorPortrait:{src:'/images/writing/portrait-960.webp',srcSet:'/images/writing/portrait-480.webp 480w, /images/writing/portrait-960.webp 960w',width:960,height:1440,alt:'Peppe Ventura tiene tra le mani una copia di L’hai scelto tu'},
  seo:{title:'L’hai scelto tu di Peppe Ventura | Libro',description:'Scopri L’hai scelto tu di Peppe Ventura: la storia di Francesco, i temi del romanzo, i dati dell’edizione in brossura e dove trovare il libro.'},
- copyNeedsApproval:true,
+ copyNeedsApproval:false,
 }];
 export function getBook(slug:string){return books.find(book=>book.slug===slug)}
 export function bookPath(book:Pick<Book,'slug'>){return `/libri/${book.slug}/`}

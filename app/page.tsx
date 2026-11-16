@@ -3,9 +3,9 @@ import {HomeInteractions} from '@/components/home/interactions';
 import {Icon} from '@/components/home/icons';
 import {cards,site,socials} from '@/content/site';
 function HomeCard({card,index}:{card:(typeof cards)[number];index:number}){
- return <article className={`home-card card-${index+1}`}><a href={card.href} data-pending="true" data-event={card.event}><div className="card-image"><img src={card.image} alt="" width="300" height="180" loading="lazy" decoding="async"/></div><div className="card-copy"><h2>{card.title}</h2><p>{card.description}</p></div><span className="card-arrow"><Icon name="arrow"/></span></a></article>;
+ return <article className={`home-card card-${index+1}`}><a href={card.href} data-event={card.event}><div className="card-image"><img src={card.image} alt="" width="300" height="180" loading="lazy" decoding="async"/></div><div className="card-copy"><h2>{card.title}</h2><p>{card.description}</p></div><span className="card-arrow"><Icon name="arrow"/></span></a></article>;
 }
-function SocialArea(){return <footer className="social-area"><p>Seguimi anche qui.</p><nav aria-label="Profili social"><ul>{socials.map(s=><li key={s.name}><a href={s.href??'#'} data-pending={s.href?undefined:'social'} aria-disabled={s.href?undefined:true} title={s.href?undefined:'Canale ufficiale da collegare'} data-event={s.event} target={s.href?'_blank':undefined} rel={s.href?'noopener noreferrer':undefined}><Icon name={s.icon} className={`social-icon ${s.icon}`}/><span>{s.name}</span></a></li>)}</ul></nav></footer>}
+function SocialArea(){return <footer className="social-area"><p>Seguimi anche qui.</p><nav aria-label="Profili social"><ul>{socials.map(s=><li key={s.name}><a href={s.href??'#'} data-event={s.event} target={s.href?'_blank':undefined} rel={s.href?'noopener noreferrer':undefined}><Icon name={s.icon} className={`social-icon ${s.icon}`}/><span>{s.name}</span></a></li>)}</ul></nav></footer>}
 export default function Home(){
  const jsonLd={'@context':'https://schema.org','@graph':[
  {'@type':'Person','@id':`${site.origin}/#person`,name:site.name,url:`${site.origin}/`,image:`${site.origin}${site.hero}`,jobTitle:['Autore','Attore','Presentatore'],description:site.description,sameAs:socials.flatMap(s=>s.href?[s.href]:[])},

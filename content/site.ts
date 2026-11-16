@@ -29,5 +29,3 @@ export const socials = [
   {name:'YouTube', href:'https://youtube.com/@peppeventuraofficial', icon:'youtube', event:'social_youtube_home'},
   {name:'Facebook', href:'https://www.facebook.com/peppe.ventura1/', icon:'facebook', event:'social_facebook_home'},
 ];
-// Future routes are reserved, not implemented in this phase.
-export const futureRoutes = ['/teatro/','/teatro/[slug-spettacolo]/','/scrivo/','/libri/[slug-libro]/','/appunti/','/appunti/[slug-articolo]/','/video/','/contatti/','/press/'];

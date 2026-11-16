@@ -1,4 +1,3 @@
-// Only verified books and a sourced quotation. Editorial cards are explicit placeholders.
 export const writing={
  title:'Scrivo',
  subtitle:'Parole che messe insieme formano una frase;\nche messe insieme formano una storia.',

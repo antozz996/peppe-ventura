@@ -5,7 +5,6 @@ import {contact} from '@/content/contact';
 import {site} from '@/content/site';
 import './privacy.css';
 
-// Bozza redatta per il form contatti: da far verificare a Peppe prima di considerarla definitiva.
 const updated='16 novembre 2026';
 export const metadata:Metadata={
  title:'Informativa privacy | Peppe Ventura',

@@ -28,9 +28,7 @@ export async function POST(request:Request){
  const text=`Nuovo messaggio dal form contatti di peppeventura.it\n\nNome: ${name}\nEmail: ${email}\nTipo di richiesta: ${type}\n\nMessaggio:\n${message}\n\n—\nRispondi direttamente a questa email per scrivere a ${email}.`;
  try{
   const transport=nodemailer.createTransport({host:config.smtp.host,port:config.smtp.port,secure:config.smtp.secure,auth:{user:config.smtp.user,pass:config.smtp.password},connectionTimeout:10000,greetingTimeout:10000,socketTimeout:15000});
-  const info=await transport.sendMail({from:config.from,to:config.to,replyTo:{name:oneLine(name),address:email},subject:`Sito · ${oneLine(type)} · ${oneLine(name)}`,text});
-  // Solo esito tecnico del server SMTP, senza dati personali di chi scrive.
-  console.log('contact_delivery_ok',JSON.stringify({messageId:info.messageId,accepted:info.accepted.length,rejected:info.rejected.length,response:info.response}));
+  await transport.sendMail({from:config.from,to:config.to,replyTo:{name:oneLine(name),address:email},subject:`Sito · ${oneLine(type)} · ${oneLine(name)}`,text});
   return reply({message:'Messaggio inviato. Grazie per avermi scritto.'},200);
  }catch(error){
   console.error('contact_delivery_failed',error instanceof Error?error.message:'unknown');
