@@ -22,12 +22,6 @@ export const theatreDates = [{
  streetAddress:'Via Raffaele Tarantino 10',
  tickets:theatre.show.tickets,
 }];
-// Deliberately explicit placeholders: these are not claims about existing works.
-export const otherShows = [
- {image:'/images/theatre/microphone.webp',title:'Titolo da confermare'},
- {image:'/images/theatre/suitcase.webp',title:'Titolo da confermare'},
- {image:'/images/theatre/chair.webp',title:'Titolo da confermare'},
-];
 export const theatreGallery = [
  {image:'audience',alt:'Peppe Ventura di spalle sul palco, davanti al pubblico'},
  {image:'stage-profile',alt:'Peppe Ventura sul palco indica una persona nel pubblico'},

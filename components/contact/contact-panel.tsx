@@ -32,7 +32,7 @@ export function ContactPanel({enabled,privacy}:{enabled:boolean;privacy:string|n
   if(!enabled){setStatus('error');setFeedback(`Il form non è ancora attivo. Nessun messaggio è stato inviato. Per ora puoi scrivermi a ${contact.email}.`);return;}
   setStatus('loading');track('contact_form_submit');
   try{
-   const response=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,type:requestType,message,website:data.get('website'),startedAt:started.current}),signal:AbortSignal.timeout(15000)});
+   const response=await fetch('/api/contact/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,type:requestType,message,website:data.get('website'),startedAt:started.current}),signal:AbortSignal.timeout(15000)});
    const result=await response.json() as {message?:string};
    if(!response.ok)throw new Error(result.message);
    setStatus('success');setFeedback('Messaggio inviato. Grazie per avermi scritto.');track('contact_form_success');form.reset();setRequestType('');started.current=null;
