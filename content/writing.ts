@@ -1,5 +1,5 @@
 export const writing={
- title:'Scrivo',
+ title:'Progetti e\nscrittura',
  subtitle:'Parole che messe insieme formano una frase;\nche messe insieme formano una storia.',
  introduction:'Racconti, libri, articoli e pensieri su ciò che mi attraversa: la vita, le relazioni, la famiglia, l’ironia e le contraddizioni del presente.',
  description:'Scopri i libri, gli scritti e gli appunti di Peppe Ventura: storie, riflessioni e contenuti originali dell’autore.',

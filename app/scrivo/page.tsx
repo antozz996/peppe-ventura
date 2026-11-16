@@ -7,7 +7,7 @@ import {site} from '@/content/site';
 import {writing,writingNotes} from '@/content/writing';
 import './writing.css';
 
-const title='Libri e scrittura di Peppe Ventura | Sito ufficiale';
+const title='Progetti e scrittura di Peppe Ventura | Sito ufficiale';
 const url=`${site.origin}/scrivo/`;
 export const metadata:Metadata={
  title,description:writing.description,alternates:{canonical:'/scrivo/'},
@@ -17,7 +17,7 @@ export const metadata:Metadata={
 const structuredData={
  '@context':'https://schema.org','@graph':[
   {'@type':'WebPage','@id':`${url}#page`,url,name:title,description:writing.description,inLanguage:'it',about:{'@id':`${site.origin}/#person`},breadcrumb:{'@id':`${url}#breadcrumb`},mainEntity:[{'@id':`${url}#libro`},{'@id':`${url}#altri-progetti`}]},
-  {'@type':'BreadcrumbList','@id':`${url}#breadcrumb`,itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:`${site.origin}/`},{'@type':'ListItem',position:2,name:'Scrivo',item:url}]},
+  {'@type':'BreadcrumbList','@id':`${url}#breadcrumb`,itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:`${site.origin}/`},{'@type':'ListItem',position:2,name:'Progetti e scrittura',item:url}]},
   {'@type':'Book','@id':`${url}#libro`,name:writing.book.title,author:{'@type':'Person','@id':`${site.origin}/#person`,name:site.name},image:`${site.origin}${writing.book.image}`,description:writing.book.description,inLanguage:'it',url:`${url}#libro`},
   {'@type':'Book','@id':`${url}#altri-progetti`,name:writing.otherBook.title,author:writing.otherBook.authors.map(name=>({'@type':'Person',name,...(name===site.name?{'@id':`${site.origin}/#person`}:{})})),publisher:{'@type':'Organization',name:writing.otherBook.publisher},inLanguage:'it',url:writing.otherBook.source},
  ],
@@ -33,8 +33,8 @@ export default function WritingPage(){return <div className="writing-page">
    <section className="writing-hero" aria-labelledby="writing-title">
     <picture className="writing-portrait"><source type="image/webp" srcSet="/images/writing/portrait-480.webp 480w, /images/writing/portrait-960.webp 960w" sizes="(max-width:767px) 340px, 500px"/><img src={writing.hero} width="960" height="1440" alt={writing.heroAlt} fetchPriority="high" decoding="async"/></picture>
     <div className="writing-intro">
-     <nav className="writing-breadcrumb" aria-label="Percorso"><Link href="/">Home</Link><span aria-hidden="true"> / </span><span aria-current="page">Scrivo</span></nav>
-     <h1 id="writing-title"><span className="sr-only">Libri e scrittura di Peppe Ventura</span><span aria-hidden="true">{writing.title}</span></h1>
+     <nav className="writing-breadcrumb" aria-label="Percorso"><Link href="/">Home</Link><span aria-hidden="true"> / </span><span aria-current="page">Progetti e scrittura</span></nav>
+     <h1 id="writing-title"><span className="sr-only">Progetti e scrittura di Peppe Ventura</span><span aria-hidden="true">{writing.title}</span></h1>
      <p className="writing-subtitle">{writing.subtitle}</p>
      <p className="writing-description">{writing.introduction}</p>
     </div>

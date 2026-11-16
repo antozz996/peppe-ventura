@@ -1,5 +1,5 @@
 export const contact={
- title:'Contatti e\ncollaborazioni',
+ title:'Lavoriamo\ninsieme',
  introduction:'Nuovi progetti, eventi, format… idee? O me vuò offrere sulo nu cafè.',
  description:'Contatta Peppe Ventura per spettacoli, eventi, collaborazioni, stampa, conduzioni e richieste professionali.',
  hero:'/images/contact/hero-770.webp',

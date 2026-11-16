@@ -62,3 +62,9 @@
 @media(max-width:359px){.writing-portrait{right:-14px;height:360px}.writing-hero{padding-top:135px;min-height:360px}.writing-hero h1{font-size:54px}.writing-subtitle{font-size:21px}.writing-feature{grid-template-columns:35% 65%}.writing-book-copy{padding-right:9px}.writing-book-copy h2{font-size:23px}.writing-actions .button{font-size:11px;gap:4px}.writing-project>a{padding-left:103px}.writing-project img{width:91px}.writing-project h2{font-size:21px}.writing-project h3{font-size:16px}.writing-quotation{margin-left:-14px;margin-right:-14px;margin-bottom:-18px;padding:24px 20px}}
 
 @media(min-width:768px){.writing-notes-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Titolo su due righe: Progetti e / scrittura */
+.writing-hero h1{white-space:pre-line;font-size:86px;line-height:.95;margin-bottom:12px}
+@media(min-width:768px) and (max-width:1099px){.writing-hero h1{font-size:70px}}
+@media(max-width:767px){.writing-hero h1{font-size:46px;line-height:.98;margin-bottom:8px}}
+@media(max-width:359px){.writing-hero h1{font-size:40px}}
