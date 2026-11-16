@@ -6,7 +6,7 @@ export function HomeInteractions(){
   const onClick=(event:MouseEvent)=>{
    const link=(event.target as Element).closest<HTMLAnchorElement>('a[data-event],a[data-pending]');
    if(!link)return;
-   if(link.dataset.pending&&!['/teatro/','/scrivo/','/video/','/chi-sono/','/contatti/','/libri/l-hai-scelto-tu/'].includes(link.getAttribute('href')??'')){event.preventDefault();setNotice(link.dataset.pending==='social'?'Il collegamento al canale YouTube sarà disponibile a breve.':'Questa sezione sarà disponibile a breve.');return;}
+   if(link.dataset.pending&&!['/teatro/','/scrivo/','/video/','/contatti/','/libri/l-hai-scelto-tu/'].includes(link.getAttribute('href')??'')){event.preventDefault();setNotice(link.dataset.pending==='social'?'Il collegamento al canale YouTube sarà disponibile a breve.':'Questa sezione sarà disponibile a breve.');return;}
    // A privacy-friendly hook. No external analytics is loaded without configuration.
    if(link.dataset.event)window.dispatchEvent(new CustomEvent('peppe:analytics',{detail:{name:link.dataset.event}}));
   };

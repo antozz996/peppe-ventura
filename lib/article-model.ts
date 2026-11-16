@@ -20,7 +20,7 @@ export const articleSchema=z.object({
  status:z.enum(['draft','review','published']),approved:z.boolean().default(false),
  title:z.string().min(1),deck:z.string().optional(),excerpt:z.string().min(1),
  category:z.string().min(1),tags:z.array(z.string()).default([]),
- author:z.object({name:z.literal('Peppe Ventura'),url:z.literal('/chi-sono/')}),
+ author:z.object({name:z.literal('Peppe Ventura'),url:z.literal('/')}),
  publishedAt:dateSchema.optional(),updatedAt:dateSchema.optional(),
  heroImage:articleImageSchema.optional(),ogImage:articleImageSchema.optional(),
  content:z.array(articleBlockSchema).min(1),showToc:z.boolean().default(false),

@@ -30,4 +30,4 @@ export const socials = [
   {name:'Facebook', href:'https://www.facebook.com/peppe.ventura1/', icon:'facebook', event:'social_facebook_home'},
 ];
 // Future routes are reserved, not implemented in this phase.
-export const futureRoutes = ['/chi-sono/','/teatro/','/teatro/[slug-spettacolo]/','/scrivo/','/libri/[slug-libro]/','/appunti/','/appunti/[slug-articolo]/','/video/','/contatti/','/press/'];
+export const futureRoutes = ['/teatro/','/teatro/[slug-spettacolo]/','/scrivo/','/libri/[slug-libro]/','/appunti/','/appunti/[slug-articolo]/','/video/','/contatti/','/press/'];

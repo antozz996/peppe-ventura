@@ -13,7 +13,7 @@ export const articlePreview:Article={
  slug:'anteprima-template',status:'review',approved:false,
  title:'Titolo del prossimo appunto',deck:'Uno spazio per le parole, con il tempo di leggerle.',
  excerpt:'Anteprima dimostrativa del template editoriale. Il testo originale sarà fornito e approvato da Peppe Ventura.',
- category:'Scrittura',tags:[],author:{name:'Peppe Ventura',url:'/chi-sono/'},
+ category:'Scrittura',tags:[],author:{name:'Peppe Ventura',url:'/'},
  heroImage:{src:'/images/books/reading-960.webp',srcSet:'/images/books/reading-480.webp 480w, /images/books/reading-960.webp 960w',width:960,height:1280,alt:'Dettaglio delle mani che sfogliano un libro',caption:'Fotografia editoriale fornita per il sito. Immagine dimostrativa del template.'},
  content:[
   {type:'paragraph',lead:true,text:[{text:'Questo è un segnaposto di impaginazione. Qui entrerà il primo paragrafo di un testo originale, scritto o approvato da Peppe Ventura.'}]},
