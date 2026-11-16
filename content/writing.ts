@@ -32,6 +32,7 @@ export const writing={
 };
 // Articoli di stampa indicati da Peppe (WhatsApp, 22/10/2026). Link esterni alle testate; immagini del sito.
 export const writingNotes=[
+ {id:'bottega-dei-libri',category:'La Bottega dei Libri',image:'growing',title:'Recensione: “L’hai scelto tu” di Peppe Ventura',excerpt:'C’è stato un incontro che vi ha cambiato la vita? La recensione del romanzo, tra incontri, scelte e crescita.',dateLabel:'15 agosto 2025',date:'2025-08-15',href:'https://www.labottegadeilibri.it/recensione-lhai-scelto-tu-di-peppe-ventura/generi-letterari/romanzo/'},
  {id:'napoli-village',category:'Napoli Village',image:'notes',title:'“L’hai scelto tu”, il viaggio emotivo di Peppe Ventura',excerpt:'Com’è nato il desiderio di scrivere questo libro e cosa l’ha spinto a raccontare la storia di Francesco ed Elena.',dateLabel:'30 luglio 2025',date:'2025-07-30',href:'https://www.napolivillage.com/cultura/lhai-scelto-tu-il-viaggio-emotivo-di-peppe-ventura/'},
  {id:'metropolis',category:'Metropolis',image:'people',title:'Dal web alla stampa: Peppe Ventura racconta il suo libro «L’hai scelto tu»',excerpt:'Dai video a una storia lunga una vita: il romanzo d’esordio di un autore che ha trovato nella scrittura una casa per le emozioni.',dateLabel:'5 agosto 2025',date:'2025-08-05',href:'https://www.metropolisweb.it/2025/08/05/dal-web-alla-stampa-peppe-ventura-racconta-suo-libro-lhai-scelto-tu/'},
 ];

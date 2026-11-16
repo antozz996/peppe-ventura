@@ -39,6 +39,7 @@ export default function VideoPage(){return <div className="video-page">
     {videoPlatforms.map(platform=><article className="video-platform" key={platform.icon}><a href={platform.href} target="_blank" rel="noopener noreferrer" data-event={platform.event}><div className="video-platform-copy"><span className={`video-platform-icon ${platform.icon}`}><Icon name={platform.icon}/></span><h2>{platform.name}</h2><p>{platform.description}</p></div><img src={`/images/videos/${platform.image}-360.webp`} width="360" height="203" alt="" loading="lazy"/><span className="video-arrow"><Icon name="arrow"/></span><span className="sr-only">Canale ufficiale, in una nuova scheda</span></a></article>)}
    </section>
    <VideoCollection/>
+   <figure className="video-quotation"><blockquote><p>“{videoPage.quotation.text}”</p></blockquote><figcaption>— {videoPage.quotation.author}</figcaption></figure>
   </main>
   <HomeInteractions/>
  </div>
