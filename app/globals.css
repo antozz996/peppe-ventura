@@ -18,5 +18,3 @@
 @media(max-width:767px){.home-card>a{min-height:55px}.card-image{height:43px}.home-cards{gap:8px}.social-area a{min-height:52px}.hero-actions .button{min-height:46px}}
 @media(max-width:359px){.home-card>a{min-height:64px}.card-image{height:50px}}
 
-.hero-kicker{font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#ff8893;margin:0 0 12px;max-width:470px;line-height:1.35}
-@media(max-width:767px){.hero-kicker{font-size:11px;letter-spacing:.06em;margin-bottom:8px;max-width:260px;text-shadow:0 1px 6px #000}}

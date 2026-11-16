@@ -1,7 +1,6 @@
 export const site = {
   name: 'Peppe Ventura',
   descriptor: 'Autore · Attore · Presentatore',
-  heroKicker: 'Autore Attore Presentatore Napoletano classe 1995.',
   headline: 'Storie, ansia e perfino qualche sorriso.',
   description: 'Sito ufficiale di Peppe Ventura, autore, attore e presentatore. Teatro, libri, video, spettacoli, progetti e attività.',
   // trim + BOM: un valore incollato con spazi o BOM rompe new URL() e quindi la build.
