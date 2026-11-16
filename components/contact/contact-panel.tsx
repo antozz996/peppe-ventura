@@ -6,6 +6,7 @@ import {ContactIcon} from './contact-icon';
 
 type Field='name'|'email'|'type'|'message';
 type Errors=Partial<Record<Field,string>>;
+const now=()=>Date.now();
 function track(name:string){window.dispatchEvent(new CustomEvent('peppe:analytics',{detail:{name}}));}
 export function ContactPanel({enabled,privacy}:{enabled:boolean;privacy:string|null}){
  const formRef=useRef<HTMLFormElement>(null);
@@ -14,7 +15,7 @@ export function ContactPanel({enabled,privacy}:{enabled:boolean;privacy:string|n
  const [errors,setErrors]=useState<Errors>({});
  const [status,setStatus]=useState<'idle'|'loading'|'success'|'error'>('idle');
  const [feedback,setFeedback]=useState('');
- function start(){if(started.current===null){started.current=Date.now();track('contact_form_start');}}
+ function start(){if(started.current===null){started.current=now();track('contact_form_start');}}
  function choose(value:string,event:string){start();setRequestType(value);track(event);document.getElementById('scrivimi')?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});formRef.current?.querySelector<HTMLInputElement>('#contact-name')?.focus({preventScroll:true});}
  async function submit(event:React.FormEvent<HTMLFormElement>){
   event.preventDefault();if(status==='loading')return;

@@ -1,4 +1,5 @@
 import type {Metadata} from 'next';
+import Link from 'next/link';
 import {Header} from '@/components/home/header';
 import {HomeInteractions} from '@/components/home/interactions';
 import {ContactPanel} from '@/components/contact/contact-panel';
@@ -19,6 +20,6 @@ export default function ContactPage(){const config=contactConfiguration();return
  <div className="page-wrap"><Header currentPath="/contatti/"/><main id="contatti">
   <section className="contact-hero" aria-labelledby="contact-title"><div className="contact-intro"><h1 id="contact-title"><span className="sr-only">Contatti e collaborazioni – Peppe Ventura</span><span aria-hidden="true">{contact.title}</span></h1><p>{contact.introduction}</p></div><picture className="contact-portrait"><source type="image/webp" srcSet="/images/contact/hero-480.webp 480w, /images/contact/hero-770.webp 770w" sizes="(max-width:767px) 330px, 620px"/><img src={contact.hero} width="770" height="900" alt={contact.heroAlt} fetchPriority="high" decoding="async"/></picture></section>
   <ContactPanel enabled={config.enabled} privacy={config.privacy}/>
- </main><footer className="contact-footer"><nav aria-label="Percorso"><a href="/">Home</a><span aria-hidden="true"> / </span><span aria-current="page">Contatti e collaborazioni</span></nav></footer><HomeInteractions/></div>
+ </main><footer className="contact-footer"><nav aria-label="Percorso"><Link href="/">Home</Link><span aria-hidden="true"> / </span><span aria-current="page">Contatti e collaborazioni</span></nav></footer><HomeInteractions/></div>
  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,'\\u003c')}}/>
 </div>}

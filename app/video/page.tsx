@@ -1,4 +1,5 @@
 import type {Metadata} from 'next';
+import Link from 'next/link';
 import {Header} from '@/components/home/header';
 import {HomeInteractions} from '@/components/home/interactions';
 import {Icon} from '@/components/home/icons';
@@ -29,7 +30,7 @@ export default function VideoPage(){return <div className="video-page">
    <section className="video-hero" aria-labelledby="video-title">
     <picture className="video-portrait"><source type="image/webp" srcSet="/images/videos/hero-480.webp 480w, /images/videos/hero-960.webp 854w" sizes="(max-width:767px) 360px, 650px"/><img src={videoPage.hero} width="854" height="990" alt={videoPage.heroAlt} fetchPriority="high" decoding="async"/></picture>
     <div className="video-intro">
-     <nav className="video-breadcrumb" aria-label="Percorso"><a href="/">Home</a><span aria-hidden="true"> / </span><span aria-current="page">Video</span></nav>
+     <nav className="video-breadcrumb" aria-label="Percorso"><Link href="/">Home</Link><span aria-hidden="true"> / </span><span aria-current="page">Video</span></nav>
      <h1 id="video-title"><span className="sr-only">Video di Peppe Ventura</span><span aria-hidden="true">{videoPage.title}</span></h1>
      <p className="video-subtitle">{videoPage.subtitle}</p><p className="video-description">{videoPage.introduction}</p>
     </div>

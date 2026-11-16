@@ -1,4 +1,5 @@
 import type {Metadata} from 'next';
+import Link from 'next/link';
 import {Header} from '@/components/home/header';
 import {HomeInteractions} from '@/components/home/interactions';
 import {Icon} from '@/components/home/icons';
@@ -29,7 +30,7 @@ export default function TheatrePage(){return <div className="theatre-page">
    <section className="theatre-hero" aria-labelledby="theatre-title">
     <picture className="theatre-portrait"><source type="image/webp" srcSet="/images/theatre/hero-480.webp 480w, /images/theatre/hero-752.webp 752w" sizes="(max-width:767px) 330px, 700px"/><img src={theatre.hero} width="752" height="1536" fetchPriority="high" decoding="async" alt={theatre.heroAlt}/></picture>
     <div className="theatre-intro">
-     <nav className="theatre-breadcrumb" aria-label="Percorso"><a href="/">Home</a><span aria-hidden="true"> / </span><span aria-current="page">Teatro</span></nav>
+     <nav className="theatre-breadcrumb" aria-label="Percorso"><Link href="/">Home</Link><span aria-hidden="true"> / </span><span aria-current="page">Teatro</span></nav>
      <h1 id="theatre-title" aria-label="Peppe Ventura a teatro">{theatre.title}</h1>
      <p className="theatre-subtitle">{theatre.subtitle}</p>
      <p className="theatre-description">{theatre.introduction}</p>

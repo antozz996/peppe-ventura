@@ -1,4 +1,5 @@
 import type {Metadata} from 'next';
+import Link from 'next/link';
 import {Header} from '@/components/home/header';
 import {HomeInteractions} from '@/components/home/interactions';
 import {Icon} from '@/components/home/icons';
@@ -32,7 +33,7 @@ export default function WritingPage(){return <div className="writing-page">
    <section className="writing-hero" aria-labelledby="writing-title">
     <picture className="writing-portrait"><source type="image/webp" srcSet="/images/writing/portrait-480.webp 480w, /images/writing/portrait-960.webp 960w" sizes="(max-width:767px) 340px, 500px"/><img src={writing.hero} width="960" height="1440" alt={writing.heroAlt} fetchPriority="high" decoding="async"/></picture>
     <div className="writing-intro">
-     <nav className="writing-breadcrumb" aria-label="Percorso"><a href="/">Home</a><span aria-hidden="true"> / </span><span aria-current="page">Scrivo</span></nav>
+     <nav className="writing-breadcrumb" aria-label="Percorso"><Link href="/">Home</Link><span aria-hidden="true"> / </span><span aria-current="page">Scrivo</span></nav>
      <h1 id="writing-title"><span className="sr-only">Libri e scrittura di Peppe Ventura</span><span aria-hidden="true">{writing.title}</span></h1>
      <p className="writing-subtitle">{writing.subtitle}</p>
      <p className="writing-description">{writing.introduction}</p>
@@ -50,7 +51,10 @@ export default function WritingPage(){return <div className="writing-page">
     </aside>
    </div>
    <section className="writing-notes" id="appunti" aria-labelledby="notes-title">
+    {/* Segnaposto: /appunti/ non esiste ancora; HomeInteractions blocca il click (data-pending). Niente <Link>, navigherebbe a una 404. */}
+    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
     <div className="writing-section-heading"><h2 id="notes-title">Ultimi articoli</h2><a href="/appunti/" data-pending="true" data-event="all_notes_scrivo">Vedi tutti gli articoli <span aria-hidden="true">→</span></a></div>
+    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
     <div className="writing-notes-grid">{writingNotes.map(note=><article className="writing-note" key={note.id}><a href="/appunti/" data-pending="true" data-event={`note_placeholder_${note.id}`} aria-label={`${note.category}: segnaposto per un futuro articolo`}><div className="writing-note-image"><img src={`/images/writing/${note.image}.webp`} width="200" height="69" loading="lazy" alt=""/></div><div className="writing-note-copy"><p className="writing-note-category">{note.category} <span>· Segnaposto</span></p><h3>{note.title}</h3><p className="writing-note-excerpt">{note.excerpt}</p><p className="writing-note-date">{note.dateLabel}</p><WritingArrow/></div></a></article>)}</div>
    </section>
    <section className="writing-quotation" aria-labelledby="quotation-title"><div><h2 id="quotation-title">Citazioni</h2><figure><blockquote><p>“{writing.quotation.text}”</p></blockquote><figcaption>{writing.quotation.context}<br/><a href={writing.quotation.source} target="_blank" rel="noopener noreferrer">{writing.quotation.sourceLabel}</a></figcaption></figure></div><a className="writing-quotation-link" href={writing.quotation.source} target="_blank" rel="noopener noreferrer" aria-label="Leggi l’intervista a Peppe Ventura su Metropolis, in una nuova scheda"><Icon name="arrow"/></a></section>
