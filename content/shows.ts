@@ -1,9 +1,9 @@
 // Verified show content only. Add future shows here without changing the template.
 export type ShowImage = {src:string;srcSet?:string;width:number;height:number;alt:string};
 export type ShowDate = {
- id:string;startDate:string;time:string;city:string;venue:string;address:string;
+ id:string;startDate:string;endDate:string;time:string;city:string;venue:string;address:string;
  ticketUrl?:string;status?:'available'|'sold_out'|'cancelled'|'postponed'|'coming_soon';
- organizer?:string;offer?:{price:number;currency:string};
+ organizer?:{name:string;url?:string};offer?:{lowPrice:number;highPrice:number;currency:string;validFrom:string};
 };
 export type ShowTrailer = {name:string;description:string;poster:ShowImage;embedUrl:string;uploadDate:string;duration?:string};
 export type Show = {
@@ -26,7 +26,9 @@ export const shows:Show[]=[{
  ],
  heroImage:{src:'/images/theatre/chiamami-papa-poster-960.webp',srcSet:'/images/theatre/chiamami-papa-poster-480.webp 480w, /images/theatre/chiamami-papa-poster-960.webp 960w',width:960,height:1200,alt:'Locandina ufficiale di Chiamami Papà con Peppe Ventura, Raffaele Nolli, Paolo Cerrone e Giusy Andolfi'},
  gallery:[],backstage:[],trailer:null,
- dates:[{id:'napoli-acacia-2026-12-09',startDate:'2026-12-09T21:00:00+01:00',time:'21:00',city:'Napoli',venue:'Teatro Acacia',address:'Via Raffaele Tarantino 10',ticketUrl,organizer:'Bestlive srl'}],
+ dates:[{id:'napoli-acacia-2026-12-09',startDate:'2026-12-09T21:00:00+01:00',endDate:'2026-12-09T23:00:00+01:00',time:'21:00',city:'Napoli',venue:'Teatro Acacia',address:'Via Raffaele Tarantino 10',ticketUrl,organizer:{name:'Bestlive srl'},
+  // Prezzi verificati su TicketOne il 17/11/2026 (Primo Settore 25 €, Secondo Settore 20 €).
+  offer:{lowPrice:20,highPrice:25,currency:'EUR',validFrom:'2026-08-10T12:00:00+02:00'}}],
  credits:[
   {label:'Testo',names:['Peppe Ventura','Raffaele Nolli']},
   {label:'Regia',names:['Oreste Ciccarello']},

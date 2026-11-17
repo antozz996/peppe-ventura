@@ -5,6 +5,8 @@ import {HomeInteractions} from '@/components/home/interactions';
 import {Icon} from '@/components/home/icons';
 import {site} from '@/content/site';
 import {theatre,theatreDates,theatreGallery} from '@/content/theatre';
+import {shows,showPath} from '@/content/shows';
+import {offerSchema} from '@/lib/show-schema';
 import './theatre.css';
 
 const title='Peppe Ventura a teatro | Spettacoli e date';
@@ -18,7 +20,7 @@ const structuredData={
  '@context':'https://schema.org','@graph':[
   {'@type':'WebPage','@id':`${url}#page`,url,name:title,description:theatre.description,inLanguage:'it',about:{'@id':`${site.origin}/#person`},breadcrumb:{'@id':`${url}#breadcrumb`}},
   {'@type':'BreadcrumbList','@id':`${url}#breadcrumb`,itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:`${site.origin}/`},{'@type':'ListItem',position:2,name:'Teatro',item:url}]},
-  ...theatreDates.map(date=>({'@type':'Event',name:`Peppe Ventura — ${theatre.show.title}`,startDate:date.startDate,eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',description:theatre.show.description,url:date.tickets,image:`${site.origin}${theatre.show.image}`,location:{'@type':'Place',name:date.venue,address:{'@type':'PostalAddress',streetAddress:date.streetAddress,addressLocality:date.city,addressCountry:'IT'}},performer:{'@type':'Person',name:site.name,url:`${site.origin}/`}})),
+  ...shows.flatMap(show=>show.dates.map(date=>({'@type':'TheaterEvent',name:`Peppe Ventura — ${show.title}`,startDate:date.startDate,endDate:date.endDate,eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',description:show.description,url:`${site.origin}${showPath(show)}`,image:`${site.origin}${show.heroImage.src}`,location:{'@type':'Place',name:date.venue,address:{'@type':'PostalAddress',streetAddress:date.address,addressLocality:date.city,addressCountry:'IT'}},performer:{'@type':'Person',name:site.name,url:`${site.origin}/`},...(date.organizer?{organizer:{'@type':'Organization',...date.organizer}}:{}),...(date.offer&&date.ticketUrl?{offers:offerSchema(date)}:{})}))),
  ],
 };
 
