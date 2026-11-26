@@ -11,16 +11,21 @@ export const theatre = {
   description:'Una commedia sulle relazioni e sulla famiglia, quando crescere significa fare i conti anche con i propri genitori. Scritta da Peppe Ventura e Raffaele Nolli.',
   image:'/images/theatre/chiamami-papa-poster-960.webp',
   imageAlt:'Locandina ufficiale di Chiamami Papà: Peppe Ventura, Raffaele Nolli, Paolo Cerrone e Giusy Andolfi; Teatro Acacia, 9 dicembre 2026, ore 21:00',
-  tickets:'https://www.ticketone.it/event/peppe-ventura-chiamami-papa-teatro-acacia-22006897/',
+  tickets:'https://www.ticketone.it/event/peppe-ventura-chiamami-papa-teatro-acacia-22412307/',
   details:'/teatro/chiamami-papa/',
   verifiedSource:'https://www.azzurroservice.net/biglietti/chiamami-pap/',
  },
 };
 export const theatreDates = [{
- day:'09',month:'DIC',year:'2026',city:'Napoli',venue:'Teatro Acacia',
+ day:'09',month:'DIC',monthName:'dicembre',year:'2026',city:'Napoli',venue:'Teatro Acacia',
  startDate:'2026-12-09T21:00:00+01:00',time:'21:00',
  streetAddress:'Via Raffaele Tarantino 10',
- tickets:theatre.show.tickets,
+ soldOut:true,tickets:'',
+},{
+ day:'13',month:'MAR',monthName:'marzo',year:'2027',city:'Napoli',venue:'Teatro Acacia',
+ startDate:'2027-03-13T21:00:00+01:00',time:'21:00',
+ streetAddress:'Via Raffaele Tarantino 10',
+ soldOut:false,tickets:theatre.show.tickets,
 }];
 // Foto di scena fornite da Peppe (16/11/2026). Ognuna è usata solo qui.
 export const theatreGallery = [

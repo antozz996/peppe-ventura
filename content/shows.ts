@@ -15,6 +15,7 @@ export type Show = {
  seo:{title:string;description:string};sources:{name:string;url:string}[];
 };
 const ticketUrl='https://www.ticketone.it/event/peppe-ventura-chiamami-papa-teatro-acacia-22006897/';
+const marchTicketUrl='https://www.ticketone.it/event/peppe-ventura-chiamami-papa-teatro-acacia-22412307/';
 export const shows:Show[]=[{
  slug:'chiamami-papa',title:'Chiamami Papà',eyebrow:'Spettacolo',
  tagline:'Diventare adulti. Restare figli.',
@@ -26,9 +27,12 @@ export const shows:Show[]=[{
  ],
  heroImage:{src:'/images/theatre/chiamami-papa-poster-960.webp',srcSet:'/images/theatre/chiamami-papa-poster-480.webp 480w, /images/theatre/chiamami-papa-poster-960.webp 960w',width:960,height:1200,alt:'Locandina ufficiale di Chiamami Papà con Peppe Ventura, Raffaele Nolli, Paolo Cerrone e Giusy Andolfi'},
  gallery:[],backstage:[],trailer:null,
- dates:[{id:'napoli-acacia-2026-12-09',startDate:'2026-12-09T21:00:00+01:00',endDate:'2026-12-09T23:00:00+01:00',time:'21:00',city:'Napoli',venue:'Teatro Acacia',address:'Via Raffaele Tarantino 10',ticketUrl,organizer:{name:'Bestlive srl'},
+ dates:[{id:'napoli-acacia-2026-12-09',startDate:'2026-12-09T21:00:00+01:00',endDate:'2026-12-09T23:00:00+01:00',time:'21:00',city:'Napoli',venue:'Teatro Acacia',address:'Via Raffaele Tarantino 10',ticketUrl,status:'sold_out',organizer:{name:'Bestlive srl'},
   // Prezzi verificati su TicketOne il 17/11/2026 (Primo Settore 25 €, Secondo Settore 20 €).
-  offer:{lowPrice:20,highPrice:25,currency:'EUR',validFrom:'2026-08-10T12:00:00+02:00'}}],
+  offer:{lowPrice:20,highPrice:25,currency:'EUR',validFrom:'2026-08-10T12:00:00+02:00'}},
+  {id:'napoli-acacia-2027-03-13',startDate:'2027-03-13T21:00:00+01:00',endDate:'2027-03-13T23:00:00+01:00',time:'21:00',city:'Napoli',venue:'Teatro Acacia',address:'Via Raffaele Tarantino 10',ticketUrl:marchTicketUrl,organizer:{name:'Bestlive srl'},
+  // Prezzi verificati su TicketOne il 26/11/2026; validFrom = giorno in cui la vendita risultava aperta.
+  offer:{lowPrice:20,highPrice:25,currency:'EUR',validFrom:'2026-11-26T00:00:00+01:00'}}],
  credits:[
   {label:'Testo',names:['Peppe Ventura','Raffaele Nolli']},
   {label:'Regia',names:['Oreste Ciccarello']},
@@ -39,7 +43,7 @@ export const shows:Show[]=[{
   {question:'Dove si trova il Teatro Acacia?',answer:'Il Teatro Acacia si trova a Napoli, in Via Raffaele Tarantino 10.'},
  ],
  press:[],relatedShows:[],
- seo:{title:'Chiamami Papà – Peppe Ventura | Date e biglietti',description:'Chiamami Papà, la commedia di Peppe Ventura e Raffaele Nolli: scopri la trama, il cast, la data al Teatro Acacia di Napoli e i biglietti.'},
+ seo:{title:'Chiamami Papà – Peppe Ventura | Date e biglietti',description:'Chiamami Papà, la commedia di Peppe Ventura e Raffaele Nolli: scopri la trama, il cast, le date al Teatro Acacia di Napoli e i biglietti.'},
  sources:[{name:'Azzurro Service',url:'https://www.azzurroservice.net/biglietti/chiamami-pap/'},{name:'TicketOne',url:ticketUrl}],
 }];
 export function getShow(slug:string){return shows.find(show=>show.slug===slug)}
