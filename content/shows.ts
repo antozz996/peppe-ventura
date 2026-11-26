@@ -25,7 +25,7 @@ export const shows:Show[]=[{
   'Al centro c’è il rapporto con la madre, attraversato da conflitti e incomprensioni. Lei, però, non rinuncia al tentativo di ricucire i legami. È qui che la commedia trova il suo punto di vista: nelle difficoltà di stare insieme, nelle parole che non arrivano e nel bisogno di ritrovare un rapporto, anche quando la famiglia è cambiata.',
   'Scritta da Peppe Ventura e Raffaele Nolli, la storia affronta questi temi con ironia e leggerezza. Sul palco, il passaggio all’età adulta incontra le relazioni familiari: due cose che raramente seguono lo stesso ritmo. Uno sguardo sui legami che cambiano, e su quello che significa continuare a essere figli.',
  ],
- heroImage:{src:'/images/theatre/chiamami-papa-poster-960.webp',srcSet:'/images/theatre/chiamami-papa-poster-480.webp 480w, /images/theatre/chiamami-papa-poster-960.webp 960w',width:960,height:1200,alt:'Locandina ufficiale di Chiamami Papà con Peppe Ventura, Raffaele Nolli, Paolo Cerrone e Giusy Andolfi'},
+ heroImage:{src:'/images/theatre/chiamami-papa-poster-marzo-960.webp',srcSet:'/images/theatre/chiamami-papa-poster-marzo-480.webp 480w, /images/theatre/chiamami-papa-poster-marzo-960.webp 960w',width:960,height:1707,alt:'Locandina ufficiale di Chiamami Papà per il 13 marzo 2027, con Peppe Ventura, Raffaele Nolli, Paolo Cerrone, Giusy Andolfi e la partecipazione straordinaria di Antonella Morea'},
  gallery:[],backstage:[],trailer:null,
  dates:[{id:'napoli-acacia-2026-12-09',startDate:'2026-12-09T21:00:00+01:00',endDate:'2026-12-09T23:00:00+01:00',time:'21:00',city:'Napoli',venue:'Teatro Acacia',address:'Via Raffaele Tarantino 10',ticketUrl,status:'sold_out',organizer:{name:'Bestlive srl'},
   // Prezzi verificati su TicketOne il 17/11/2026 (Primo Settore 25 €, Secondo Settore 20 €).
@@ -35,8 +35,9 @@ export const shows:Show[]=[{
   offer:{lowPrice:20,highPrice:25,currency:'EUR',validFrom:'2026-11-26T00:00:00+01:00'}}],
  credits:[
   {label:'Testo',names:['Peppe Ventura','Raffaele Nolli']},
-  {label:'Regia',names:['Oreste Ciccarello']},
+  {label:'Regia',names:['Oreste Ciccariello']},
   {label:'In scena',names:['Peppe Ventura','Raffaele Nolli','Paolo Cerrone','Giusy Andolfi']},
+  {label:'Partecipazione straordinaria · 13 marzo 2027',names:['Antonella Morea']},
  ],
  faq:[
   {question:'Dove posso acquistare i biglietti?',answer:'Il pulsante Biglietti apre la pagina dello spettacolo su TicketOne. Prezzi, posti e condizioni di acquisto sono indicati dalla biglietteria.'},

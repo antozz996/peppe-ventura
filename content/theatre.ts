@@ -9,8 +9,8 @@ export const theatre = {
  show:{
   title:'Chiamami Papà',
   description:'Una commedia sulle relazioni e sulla famiglia, quando crescere significa fare i conti anche con i propri genitori. Scritta da Peppe Ventura e Raffaele Nolli.',
-  image:'/images/theatre/chiamami-papa-poster-960.webp',
-  imageAlt:'Locandina ufficiale di Chiamami Papà: Peppe Ventura, Raffaele Nolli, Paolo Cerrone e Giusy Andolfi; Teatro Acacia, 9 dicembre 2026, ore 21:00',
+  image:'/images/theatre/chiamami-papa-poster-marzo-960.webp',
+  imageAlt:'Locandina ufficiale di Chiamami Papà: Peppe Ventura, Raffaele Nolli, Paolo Cerrone, Giusy Andolfi e la partecipazione straordinaria di Antonella Morea; Teatro Acacia, 13 marzo 2027, ore 21:00',
   tickets:'https://www.ticketone.it/event/peppe-ventura-chiamami-papa-teatro-acacia-22412307/',
   details:'/teatro/chiamami-papa/',
   verifiedSource:'https://www.azzurroservice.net/biglietti/chiamami-pap/',
